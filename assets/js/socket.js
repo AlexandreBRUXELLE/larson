@@ -8,7 +8,7 @@
 // from the params if you are not using authentication.
 import {Socket} from "phoenix"
 
-let socket = new Socket("/socket", {params: {token: window.userToken}})
+let socket = new Socket("/socket", {})
 
 // When you connect, you'll often need to authenticate the client.
 // For example, imagine you have an authentication plug, `MyAuth`,
@@ -54,10 +54,19 @@ let socket = new Socket("/socket", {params: {token: window.userToken}})
 // Finally, connect to the socket:
 socket.connect()
 
-// Now that you are connected, you can join channels with a topic:
-let channel = socket.channel("topic:subtopic", {})
-channel.join()
-  .receive("ok", resp => { console.log("Joined successfully", resp) })
-  .receive("error", resp => { console.log("Unable to join", resp) })
-
-export default socket
+// Elm
+// ...
+if (platformer) {
+  let app = Elm.Games.Platformer.init({ node: platformer });
+ 
+  let channel = socket.channel("score:platformer", {})
+ 
+  channel.join()
+    .receive("ok", resp => { console.log("Joined successfully", resp) })
+    .receive("error", resp => { console.log("Unable to join", resp) })
+ 
+  app.ports.broadcastScore.subscribe(function (scoreData) {
+    console.log(`Broadcasting ${scoreData} score data from Elm using the broadcastSc22 ore port.`);
+    channel.push("broadcast_score", { player_score: scoreData });
+  });
+}

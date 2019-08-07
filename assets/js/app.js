@@ -15,9 +15,22 @@ import "phoenix_html"
 // Elm
 import { Elm } from "../elm/src/Main.elm"
 
+const platformer=document.querySelector("#platformer");
+
 Elm.Main.init({
   node: document.getElementById("elm-container")
-})
+}) 
+
+if (platformer) {
+   console.log(`Debug 1`);
+
+   let app = Elm.Games.Platformer.init({ node: platformer });
+    
+   app.ports.broadcastScore.subscribe(function (scoreData) {
+     console.log(`Broadcasting ${scoreData} score data from Elm using the broadcastScore port.`);
+     // Later, we'll push the score data to the Phoenix channel
+   });
+}
 
 // Import local files
 //
