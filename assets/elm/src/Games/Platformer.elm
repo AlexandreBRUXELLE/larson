@@ -13,16 +13,14 @@ import Svg.Attributes exposing (..)
 import Time
 
 -- MAIN
+
 main =
-    text "yuzgebvsnldZVM ?DS"
-    
-{- main =
     Browser.element
         { init = init
         , update = update
         , subscriptions = subscriptions
         , view = view
-        } -}
+        }
 
 -- MODEL
 type alias Model  =

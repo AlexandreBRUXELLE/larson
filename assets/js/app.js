@@ -3,6 +3,8 @@
 // its own CSS file.
 import css from "../css/app.css"
 
+import {Socket} from "phoenix"
+
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
 // in "webpack.config.js".
@@ -11,9 +13,12 @@ import css from "../css/app.css"
 //
 import "phoenix_html"
 
+let socket = new Socket("/socket", {})
+
+socket.connect()
 
 // Elm
-import { Elm } from "../elm/src/Main.elm"
+import { Elm } from "../elm/src/Main.elm";
 
 const platformer=document.querySelector("#platformer");
 
@@ -22,14 +27,18 @@ Elm.Main.init({
 }) 
 
 if (platformer) {
-   console.log(`Debug 1`);
-
-   let app = Elm.Games.Platformer.init({ node: platformer });
-    
-   app.ports.broadcastScore.subscribe(function (scoreData) {
-     console.log(`Broadcasting ${scoreData} score data from Elm using the broadcastScore port.`);
-     // Later, we'll push the score data to the Phoenix channel
-   });
+    let app = Elm.Games.Platformer.init({ node: platformer });
+   
+    let channel = socket.channel("score:platformer", {})
+   
+    channel.join()
+      .receive("ok", resp => { console.log("Joined successfully", resp) })
+      .receive("error", resp => { console.log("Unable to join", resp) })
+   
+    app.ports.broadcastScore.subscribe(function (scoreData) {
+      console.log(`Broadcasting ${scoreData} score data from Elm using the broadcast Score port.`);
+      channel.push("broadcast_score", { player_score: scoreData });
+    });
 }
 
 // Import local files
