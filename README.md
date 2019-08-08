@@ -13,6 +13,11 @@ mkdir elm
 cd  .\elm\
 elm init
 
+# to fix js :
+npm audit fix
+
+cf. https://github.com/elixir-elm-tutorial/platform
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

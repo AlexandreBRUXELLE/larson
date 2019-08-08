@@ -24,11 +24,16 @@ main =
 
 -- MODEL
 type alias Model  =
+    { gameplays : List Gameplay,
+      playerScore : Int }
+
+type alias Gameplay =
     { playerScore : Int }
  
 initialModel : Model
 initialModel =
-     {playerScore = 0 }
+     {gameplays = [],
+     playerScore = 0 }
  
 init : () -> ( Model, Cmd Msg )
 init _ =
@@ -38,21 +43,39 @@ init _ =
 
 port broadcastScore : Encode.Value -> Cmd msg
 
+port receiveScoreFromPhoenix : (Encode.Value -> msg) -> Sub msg
+
+
 type Msg
      = BroadcastScore Encode.Value
      | CountdownTimer Time.Posix
      | GameLoop Float
      | KeyDown String
      | NoOp
+     | ReceiveScoreFromPhoenix Encode.Value
      | SetNewItemPositionX Int     
 
 -- UPDATE
+
+decodeGameplay : Decode.Decoder Gameplay
+decodeGameplay =
+     Decode.map Gameplay
+         (Decode.field "player_score" Decode.int)
+
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         BroadcastScore value ->
             ( model, broadcastScore value )
+        ReceiveScoreFromPhoenix incomingJsonData ->
+            case Decode.decodeValue decodeGameplay incomingJsonData of
+                Ok gameplay ->
+                    Debug.log "Successfully received score data."
+                    ( { model | gameplays = gameplay :: model.gameplays }, Cmd.none )
+                Err _ ->
+                        Debug.log "blurp"
+                        (model , Cmd.none )
         _ -> 
             Debug.log "blurp"
             (model , Cmd.none )
@@ -61,7 +84,8 @@ update msg model =
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    Sub.none
+        Sub.batch
+            [ receiveScoreFromPhoenix ReceiveScoreFromPhoenix ]
 
 
  -- VIEW
@@ -84,4 +108,13 @@ view : Model -> Html Msg
 view model =
     div [ class "container" ]
         [ viewBroadcastScoreButton model
-        ]        
+        ]
+
+viewGameplayItem : Model -> Gameplay -> Html Msg
+viewGameplayItem model gameplay =
+    let
+        displayScore =
+            String.fromInt gameplay.playerScore
+    in
+    div [ class "gameplay-item" ]
+        [  text displayScore ]
