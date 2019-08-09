@@ -39,6 +39,15 @@ if (platformer) {
       console.log(`Broadcasting ${scoreData} score data from Elm using the broadcast Score port.`);
       channel.push("broadcast_score", { player_score: scoreData });
     });
+
+    channel.on("broadcast_score", payload => {
+        console.log(`Receiving payload data from Phoenix using the receivingScoreFromPhoenix port.`);
+    
+        app.ports.receiveScoreFromPhoenix.send({
+            player_score: payload.player_score
+        });
+      });
+
 }
 
 // Import local files

@@ -2,7 +2,7 @@ port module Games.Platformer exposing (main)
 
 import Browser
 import Browser.Events
-import Html exposing (Html, button, div)
+import Html exposing (Html, button, div, h2, li, span, strong, ul)
 import Html.Attributes
 import Html.Events
 import Json.Decode as Decode
@@ -33,7 +33,7 @@ type alias Gameplay =
 initialModel : Model
 initialModel =
      {gameplays = [],
-     playerScore = 0 }
+     playerScore = 2 }
  
 init : () -> ( Model, Cmd Msg )
 init _ =
@@ -107,8 +107,14 @@ viewBroadcastScoreButton model =
 view : Model -> Html Msg
 view model =
     div [ class "container" ]
-        [ viewBroadcastScoreButton model
+        [ viewBroadcastScoreButton model,
+          viewGameplaysList model
         ]
+
+viewGameplaysList : Model -> Html Msg
+viewGameplaysList model =
+    ul [ Html.Attributes.class "gameplays-list" ]
+        (List.map (viewGameplayItem model) model.gameplays)
 
 viewGameplayItem : Model -> Gameplay -> Html Msg
 viewGameplayItem model gameplay =
@@ -116,5 +122,7 @@ viewGameplayItem model gameplay =
         displayScore =
             String.fromInt gameplay.playerScore
     in
-    div [ class "gameplay-item" ]
-        [  text displayScore ]
+    li [ Html.Attributes.class "gameplay-item" ]
+        [ strong [] [ text ("glup" ++ ": ") ]
+        , span [] [ text displayScore ]
+        ]

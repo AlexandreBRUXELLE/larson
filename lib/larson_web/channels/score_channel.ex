@@ -5,8 +5,16 @@ defmodule LarsonWeb.ScoreChannel do
     {:ok, socket}
   end
 
-  def handle_in("broadcast_score", payload, socket) do
-    broadcast(socket, "broadcast_score", payload)
+  def handle_in("broadcast_score", %{"player_score" => player_score} = payload, socket) do
+
+    #player_score=player_score+1
+    #Io.puts ("player_score", ?\s, player_score)
+
+    payload = %{
+          player_score: player_score+ 1
+    }
+
+     broadcast(socket, "broadcast_score", payload)
     {:noreply, socket}
   end
 
