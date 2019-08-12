@@ -25,15 +25,15 @@ main =
 -- MODEL
 type alias Model  =
     { gameplays : List Gameplay,
-      playerScore : Int }
+      playerScore : String }
 
 type alias Gameplay =
-    { playerScore : Int }
+    { playerScore : String }
  
 initialModel : Model
 initialModel =
      {gameplays = [],
-     playerScore = 2 }
+      playerScore = "laloy2" }
  
 init : () -> ( Model, Cmd Msg )
 init _ =
@@ -60,7 +60,7 @@ type Msg
 decodeGameplay : Decode.Decoder Gameplay
 decodeGameplay =
      Decode.map Gameplay
-          Decode.field "player_score" (Decode.int+1)
+          (Decode.field "player_score" Decode.string)
           
 
 
@@ -95,7 +95,7 @@ viewBroadcastScoreButton model =
     let
         broadcastEvent =
             model.playerScore
-                |> Encode.int
+                |> Encode.string
                 |> BroadcastScore
                 |> Html.Events.onClick
     in
@@ -121,7 +121,7 @@ viewGameplayItem : Model -> Gameplay -> Html Msg
 viewGameplayItem model gameplay =
     let
         displayScore =
-            String.fromInt (gameplay.playerScore+1)
+            (gameplay.playerScore)
     in
     li [ Html.Attributes.class "gameplay-item" ]
         [ strong [] [ text ("glup" ++ ": ") ]

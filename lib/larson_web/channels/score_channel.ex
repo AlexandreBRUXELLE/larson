@@ -6,23 +6,15 @@ defmodule LarsonWeb.ScoreChannel do
   end
 
   def handle_in("broadcast_score", payload, socket) do
+
     broadcast(socket, "broadcast_score", payload)
 
-    num =
-      case System.argv do
-        []    -> 30
-        param ->
-          {x, _} =
-            param
-            |> Enum.join(" ")
-            |> Integer.parse
-          x
-      end
+    %{"player_score"=>player_score}=payload
 
-    IO.puts " [x] Requesting (#{num})"
-    response = LarsonWeb.Rabbit.call(num)
+    IO.puts " [x] Requesting (#{player_score})"
+    response = LarsonWeb.Rabbit.call(player_score)
     IO.puts " [.] Got #{response}"
-    
+
     {:noreply, socket}
   end
 
