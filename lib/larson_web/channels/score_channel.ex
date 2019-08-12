@@ -5,17 +5,27 @@ defmodule LarsonWeb.ScoreChannel do
     {:ok, socket}
   end
 
-  def handle_in("broadcast_score", %{"player_score" => player_score} = payload, socket) do
+  def handle_in("broadcast_score", payload, socket) do
+    broadcast(socket, "broadcast_score", payload)
 
-    #player_score=player_score+1
-    #Io.puts ("player_score", ?\s, player_score)
+    num =
+      case System.argv do
+        []    -> 30
+        param ->
+          {x, _} =
+            param
+            |> Enum.join(" ")
+            |> Integer.parse
+          x
+      end
 
-    payload = %{
-          player_score: player_score+ 1
-    }
-
-     broadcast(socket, "broadcast_score", payload)
+    IO.puts " [x] Requesting (#{num})"
+    response = LarsonWeb.Rabbit.call(num)
+    IO.puts " [.] Got #{response}"
+    
     {:noreply, socket}
   end
+
+
 
 end
