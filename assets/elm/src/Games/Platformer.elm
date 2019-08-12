@@ -60,7 +60,8 @@ type Msg
 decodeGameplay : Decode.Decoder Gameplay
 decodeGameplay =
      Decode.map Gameplay
-         (Decode.field "player_score" Decode.int)
+          Decode.field "player_score" (Decode.int+1)
+          
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -120,7 +121,7 @@ viewGameplayItem : Model -> Gameplay -> Html Msg
 viewGameplayItem model gameplay =
     let
         displayScore =
-            String.fromInt gameplay.playerScore
+            String.fromInt (gameplay.playerScore+1)
     in
     li [ Html.Attributes.class "gameplay-item" ]
         [ strong [] [ text ("glup" ++ ": ") ]
