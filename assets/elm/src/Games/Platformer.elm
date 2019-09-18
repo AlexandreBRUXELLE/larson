@@ -2,15 +2,18 @@ port module Games.Platformer exposing (main)
 
 import Browser
 import Browser.Events
-import Html exposing (Html, button, div)
-import Html.Attributes
+import Html exposing (Html, button, div,  text)
+import Html.Attributes exposing ( type_, value)
 import Html.Events
 import Json.Decode as Decode
 import Json.Encode as Encode
 import Random
-import Svg exposing (..)
-import Svg.Attributes exposing (..)
+--import Svg exposing (..)
+--import Svg.Attributes exposing (..)
 import Time
+
+import Main
+
 
 -- MAIN
 
@@ -29,12 +32,12 @@ type alias Model  =
 
 type alias Gameplay =
     { playerScore : Int }
- 
+
 initialModel : Model
 initialModel =
      {gameplays = [],
      playerScore = 0 }
- 
+
 init : () -> ( Model, Cmd Msg )
 init _ =
     ( initialModel, Cmd.none )
@@ -53,7 +56,7 @@ type Msg
      | KeyDown String
      | NoOp
      | ReceiveScoreFromPhoenix Encode.Value
-     | SetNewItemPositionX Int     
+     | SetNewItemPositionX Int
 
 -- UPDATE
 
@@ -76,7 +79,7 @@ update msg model =
                 Err _ ->
                         Debug.log "blurp"
                         (model , Cmd.none )
-        _ -> 
+        _ ->
             Debug.log "blurp"
             (model , Cmd.none )
 
@@ -102,13 +105,13 @@ viewBroadcastScoreButton model =
         [ broadcastEvent
         , Html.Attributes.class "button"
         ]
-        [ text "Broadcast Score Over Socket" ]            
+        [ text "Broadcast Score Over Socket" ]
 
 view : Model -> Html Msg
 view model =
-    div [ class "container" ]
-        [ viewBroadcastScoreButton model
-        ]
+    div []
+      [ viewBroadcastScoreButton model
+      ]
 
 viewGameplayItem : Model -> Gameplay -> Html Msg
 viewGameplayItem model gameplay =
@@ -116,5 +119,5 @@ viewGameplayItem model gameplay =
         displayScore =
             String.fromInt gameplay.playerScore
     in
-    div [ class "gameplay-item" ]
-        [  text displayScore ]
+    div []
+      [  text displayScore ]

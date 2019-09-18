@@ -1,4 +1,4 @@
-module Main exposing (main)
+module Main exposing (main, Msg)
 
 import Browser
 import Html exposing (..)
@@ -9,7 +9,11 @@ import Html.Events exposing (onClick)
 -- MAIN
 
 main =
-  Browser.sandbox { init = init, update = update, view = view }
+  Browser.sandbox
+    { init = init,
+      update = update,
+      view = view
+    }
 
 -- MODEL
 
@@ -40,10 +44,10 @@ update msg model =
 
     Args args ->
       { model | post = False , args = args }
-    
+
     Post ->
       { model | post = True}
-      
+
 
 -- VIEW
 
