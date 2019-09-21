@@ -18,9 +18,9 @@ let socket = new Socket("/socket", {})
 socket.connect()
 
 // Elm
-import { Elm } from "../elm/src/Main2.elm";
+import { Elm } from "../elm/src/Main.elm";
 
-let app = Elm.Main2.init({
+let app = Elm.Main.init({
   node: document.getElementById("elm-container")
 })
 

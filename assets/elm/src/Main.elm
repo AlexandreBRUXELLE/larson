@@ -1,4 +1,4 @@
-port module Main2 exposing (main, Msg)
+port module Main exposing (main, Msg)
 
 import Browser
 import Browser.Events
