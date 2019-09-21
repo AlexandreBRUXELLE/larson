@@ -18,28 +18,23 @@ let socket = new Socket("/socket", {})
 socket.connect()
 
 // Elm
-import { Elm } from "../elm/src/Main.elm";
+import { Elm } from "../elm/src/Main2.elm";
 
-const platformer=document.querySelector("#platformer");
-
-Elm.Main.init({
+let app = Elm.Main2.init({
   node: document.getElementById("elm-container")
-}) 
+})
 
-if (platformer) {
-    let app = Elm.Games.Platformer.init({ node: platformer });
-   
-    let channel = socket.channel("score:platformer", {})
-   
-    channel.join()
-      .receive("ok", resp => { console.log("Joined successfully", resp) })
-      .receive("error", resp => { console.log("Unable to join", resp) })
-   
-    app.ports.broadcastScore.subscribe(function (scoreData) {
-      console.log(`Broadcasting ${scoreData} score data from Elm using the broadcast Score port.`);
-      channel.push("broadcast_score", { player_score: scoreData });
-    });
-}
+// elm -- channel
+let channel = socket.channel("score:platformer", {})
+
+channel.join()
+  .receive("ok", resp => { console.log("Joined successfully", resp) })
+  .receive("error", resp => { console.log("Unable to join", resp) })
+
+app.ports.broadcastScore.subscribe(function (scoreData) {
+  console.log(`Broadcasting ${scoreData} score data from Elm using the broadcast Score port.`);
+  channel.push("broadcast_score", { player_score: scoreData });
+});
 
 // Import local files
 //

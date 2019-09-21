@@ -1,0 +1,1020 @@
+2019-09-21 20:24:33 =ERROR REPORT====
+** Generic server <0.445.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => 0},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.445.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.437.0>}
+** Reason for termination ==
+** {{badmatch,{error,econnrefused}},[{'Elixir.LarsonWeb.Rabbit',call,1,[{file,"lib/larson_web/channels/larson_web/rabbit.ex"},{line,16}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 20:24:33 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.445.0>
+    registered_name: []
+    exception error: {{badmatch,{error,econnrefused}},[{'Elixir.LarsonWeb.Rabbit',call,1,[{file,"lib/larson_web/channels/larson_web/rabbit.ex"},{line,16}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.324.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.324.0>,<0.304.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 8574
+  neighbours:
+2019-09-21 20:24:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.324.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{error,econnrefused}},[{'Elixir.LarsonWeb.Rabbit',call,1,[{file,"lib/larson_web/channels/larson_web/rabbit.ex"},{line,16}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.445.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 20:24:37 =ERROR REPORT====
+** Generic server <0.452.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"3">>,payload => #{<<"player_score">> => 0},ref => <<"4">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.452.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.437.0>}
+** Reason for termination ==
+** {{badmatch,{error,econnrefused}},[{'Elixir.LarsonWeb.Rabbit',call,1,[{file,"lib/larson_web/channels/larson_web/rabbit.ex"},{line,16}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 20:24:37 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.452.0>
+    registered_name: []
+    exception error: {{badmatch,{error,econnrefused}},[{'Elixir.LarsonWeb.Rabbit',call,1,[{file,"lib/larson_web/channels/larson_web/rabbit.ex"},{line,16}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.318.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.318.0>,<0.304.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8419
+  neighbours:
+2019-09-21 20:24:37 =SUPERVISOR REPORT====
+     Supervisor: {<0.318.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {{badmatch,{error,econnrefused}},[{'Elixir.LarsonWeb.Rabbit',call,1,[{file,"lib/larson_web/channels/larson_web/rabbit.ex"},{line,16}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,23}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.452.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:53:54 =ERROR REPORT====
+** Task <0.428.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun Elixir.Phoenix.Endpoint.Watcher:watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:53:54 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.428.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 16830
+  neighbours:
+2019-09-21 21:53:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.428.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:53:57 =ERROR REPORT====
+** Generic server <0.560.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.557.0>,#Ref<0.2469603423.1209270273.90970>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.560.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:53:57 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.560.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.560.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8940
+  neighbours:
+2019-09-21 21:53:57 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.560.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.560.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:53:58 =ERROR REPORT====
+** Generic server <0.565.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.557.0>,#Ref<0.2469603423.1209270273.90999>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.565.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:53:58 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.565.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.565.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.321.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.321.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8838
+  neighbours:
+2019-09-21 21:53:58 =SUPERVISOR REPORT====
+     Supervisor: {<0.321.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.565.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.565.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:54:00 =ERROR REPORT====
+** Generic server <0.566.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.557.0>,#Ref<0.2469603423.1209270273.91020>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.566.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:54:00 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.566.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.566.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8838
+  neighbours:
+2019-09-21 21:54:00 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.566.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.557.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.566.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:54:08 =ERROR REPORT====
+** Generic server <0.436.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.432.0>,#Ref<0.3829809345.2551447555.211632>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.436.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:54:08 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.436.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.436.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.322.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.322.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 9000
+  neighbours:
+2019-09-21 21:54:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.322.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.436.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.436.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:54:10 =ERROR REPORT====
+** Generic server <0.443.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.439.0>,#Ref<0.3829809345.2551447555.212140>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.439.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.443.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.439.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:54:10 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.443.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.443.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.439.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.323.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.323.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8808
+  neighbours:
+2019-09-21 21:54:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.323.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.443.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.439.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.443.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:54:10 =ERROR REPORT====
+** Generic server <0.456.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.453.0>,#Ref<0.3829809345.2551447555.212667>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.456.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:54:10 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.456.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.456.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.318.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.318.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8808
+  neighbours:
+2019-09-21 21:54:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.318.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.456.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.456.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:55:06 =ERROR REPORT====
+** Generic server <0.437.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.429.0>,#Ref<0.1848860168.672923651.214871>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"11">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.429.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.437.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"11">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.429.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:55:06 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.437.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.437.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"11">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.429.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.321.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.321.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 9106
+  neighbours:
+2019-09-21 21:55:06 =SUPERVISOR REPORT====
+     Supervisor: {<0.321.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.437.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"11">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.429.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.437.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 21:55:07 =ERROR REPORT====
+** Generic server <0.444.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.440.0>,#Ref<0.1848860168.672923652.210017>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"12">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.440.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.444.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"12">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.440.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 21:55:07 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.444.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.444.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"12">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.440.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.318.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.318.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 9106
+  neighbours:
+2019-09-21 21:55:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.318.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.444.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"12">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.440.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.444.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:01:14 =ERROR REPORT====
+** Task <0.428.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun Elixir.Phoenix.Endpoint.Watcher:watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:01:14 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.428.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 17020
+  neighbours:
+2019-09-21 22:01:14 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.428.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:09 =ERROR REPORT====
+** Task <0.428.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun Elixir.Phoenix.Endpoint.Watcher:watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:09 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.428.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 16962
+  neighbours:
+2019-09-21 22:05:09 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.428.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:11 =ERROR REPORT====
+** Generic server <0.718.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.715.0>,#Ref<0.2647027855.2553282561.188826>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.718.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:11 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.718.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.718.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.324.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.324.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8929
+  neighbours:
+2019-09-21 22:05:11 =SUPERVISOR REPORT====
+     Supervisor: {<0.324.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.718.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.718.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:12 =ERROR REPORT====
+** Generic server <0.724.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.715.0>,#Ref<0.2647027855.2553282561.189116>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.724.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:12 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.724.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.724.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8808
+  neighbours:
+2019-09-21 22:05:12 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.724.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.724.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:14 =ERROR REPORT====
+** Generic server <0.725.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.715.0>,#Ref<0.2647027855.2553282561.189157>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.725.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:14 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.725.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.725.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.321.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.321.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8808
+  neighbours:
+2019-09-21 22:05:14 =SUPERVISOR REPORT====
+     Supervisor: {<0.321.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.725.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.725.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:19 =ERROR REPORT====
+** Generic server <0.726.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.715.0>,#Ref<0.2647027855.2553282561.189202>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.726.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:19 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.726.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.726.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.319.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.319.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8808
+  neighbours:
+2019-09-21 22:05:19 =SUPERVISOR REPORT====
+     Supervisor: {<0.319.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.726.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.726.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:29 =ERROR REPORT====
+** Generic server <0.728.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.715.0>,#Ref<0.2647027855.2553282561.189238>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.728.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:29 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.728.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.728.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.319.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.319.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8808
+  neighbours:
+2019-09-21 22:05:29 =SUPERVISOR REPORT====
+     Supervisor: {<0.319.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.728.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.715.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.728.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:41 =ERROR REPORT====
+** Generic server <0.437.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.432.0>,#Ref<0.1821475713.3627548676.216110>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.437.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.437.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.437.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:41 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.437.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.432.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.437.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:42 =ERROR REPORT====
+** Generic server <0.456.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.453.0>,#Ref<0.1821475713.3627548676.216511>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.456.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:42 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.456.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.456.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:42 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.456.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.456.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:43 =ERROR REPORT====
+** Generic server <0.462.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.453.0>,#Ref<0.1821475713.3627548676.216584>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.462.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:43 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.462.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.462.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.323.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.323.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:43 =SUPERVISOR REPORT====
+     Supervisor: {<0.323.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.462.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.462.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:45 =ERROR REPORT====
+** Generic server <0.463.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.453.0>,#Ref<0.1821475713.3627548676.216602>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.463.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:45 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.463.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.463.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.319.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.319.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:45 =SUPERVISOR REPORT====
+     Supervisor: {<0.319.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.463.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.453.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.463.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:50 =ERROR REPORT====
+** Generic server <0.479.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213144>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.479.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:50 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.479.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.479.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.319.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.319.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8825
+  neighbours:
+2019-09-21 22:05:50 =SUPERVISOR REPORT====
+     Supervisor: {<0.319.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.479.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.479.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:51 =ERROR REPORT====
+** Generic server <0.485.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213427>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.485.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.485.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.485.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.320.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.320.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:51 =SUPERVISOR REPORT====
+     Supervisor: {<0.320.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.485.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.485.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:53 =ERROR REPORT====
+** Generic server <0.486.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213451>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.486.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:53 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.486.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.486.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.321.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.321.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:53 =SUPERVISOR REPORT====
+     Supervisor: {<0.321.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.486.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.486.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:05:58 =ERROR REPORT====
+** Generic server <0.487.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213469>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.487.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:05:58 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.487.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.487.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:05:58 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.487.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.487.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:08 =ERROR REPORT====
+** Generic server <0.488.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213497>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.488.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:08 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.488.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.488.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.321.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.321.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.321.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.488.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"5">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.488.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:18 =ERROR REPORT====
+** Generic server <0.489.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213513>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.489.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:18 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.489.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.489.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.323.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.323.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:18 =SUPERVISOR REPORT====
+     Supervisor: {<0.323.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.489.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.489.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:28 =ERROR REPORT====
+** Generic server <0.490.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.476.0>,#Ref<0.1821475713.3627548677.213536>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.490.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:28 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.490.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.490.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.490.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"8">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.476.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.490.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:38 =ERROR REPORT====
+** Generic server <0.510.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.507.0>,#Ref<0.1821475713.3627548673.214761>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.510.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:38 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.510.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.510.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.320.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.320.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:38 =SUPERVISOR REPORT====
+     Supervisor: {<0.320.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.510.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.510.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:40 =ERROR REPORT====
+** Generic server <0.515.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.507.0>,#Ref<0.1821475713.3627548673.214958>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.515.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:40 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.515.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.515.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.318.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.318.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:40 =SUPERVISOR REPORT====
+     Supervisor: {<0.318.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.515.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"2">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.515.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:42 =ERROR REPORT====
+** Generic server <0.516.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.507.0>,#Ref<0.1821475713.3627548673.214984>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.516.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:42 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.516.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.516.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.317.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.317.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:42 =SUPERVISOR REPORT====
+     Supervisor: {<0.317.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.516.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.516.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:06:47 =ERROR REPORT====
+** Generic server <0.517.0> terminating 
+** Last message in was {join,'Elixir.Phoenix.Channel.Server'}
+** When Server state == {#{},{<0.507.0>,#Ref<0.1821475713.3627548673.215014>},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => nil,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}}
+** Reason for termination ==
+** {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.517.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:06:47 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.517.0>
+    registered_name: []
+    exception error: {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.517.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.318.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.318.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 8826
+  neighbours:
+2019-09-21 22:06:47 =SUPERVISOR REPORT====
+     Supervisor: {<0.318.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {function_clause,[{'Elixir.LarsonWeb.ScoreChannel',join,[<<"score:main">>,#{},#{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.517.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"4">>,joined => false,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:main">>,transport => websocket,transport_pid => <0.507.0>}],[{file,"lib/larson_web/channels/score_channel.ex"},{line,4}]},{'Elixir.Phoenix.Channel.Server',channel_join,4,[{file,"lib/phoenix/channel/server.ex"},{line,374}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,256}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.517.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:08:51 =ERROR REPORT====
+** Task <0.428.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun Elixir.Phoenix.Endpoint.Watcher:watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:08:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.428.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 10958
+    stack_size: 27
+    reductions: 16781
+  neighbours:
+2019-09-21 22:08:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.428.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2019-09-21 22:12:44 =ERROR REPORT====
+** Task <0.624.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun Elixir.Phoenix.Endpoint.Watcher:watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-21 22:12:44 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.624.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 16754
+  neighbours:
+2019-09-21 22:12:44 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.624.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/abruxelle/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+

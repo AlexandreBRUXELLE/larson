@@ -1,4 +1,4 @@
-port module Main exposing (main, Msg)
+port module Main2 exposing (main, Msg)
 
 import Browser
 import Browser.Events
@@ -83,27 +83,31 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
   case msg of
     Command command ->
+        Debug.log " -- Cmd -- "
         ( { model | post = False , command = command } , Cmd.none )
 
     Args args ->
+        Debug.log " -- Args -- "
         ( { model | post = False , args = args } , Cmd.none )
 
     Post ->
+        Debug.log " -- Post -- "
         ( { model | post = True} , Cmd.none )
 
     BroadcastScore value ->
+        Debug.log " -- Broadcast -- "
         ( model, broadcastScore value )
 
     ReceiveScoreFromPhoenix incomingJsonData ->
         case Decode.decodeValue decodeGameplay incomingJsonData of
             Ok gameplay ->
-                Debug.log "Successfully received score data."
+                Debug.log " -- Successfully received score data. --"
                 ( { model | gameplays = gameplay :: model.gameplays }, Cmd.none )
             Err _ ->
-                    Debug.log "blurp"
+                    Debug.log " --  incomingJsonData nok -- "
                     (model , Cmd.none )
     _ ->
-        Debug.log "blurp"
+        Debug.log "-- msg nok --"
         (model , Cmd.none )
 
 -- SUBSCRIPTIONS
