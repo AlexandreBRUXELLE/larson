@@ -33,11 +33,11 @@ type alias Model =
   , args : String
   , post : Bool
   , gameplays : List Gameplay
-  , playerScore : Int
+  , playerScore : String
   }
 
 type alias Gameplay =
-    { playerScore : Int }
+    { playerScore : String }
 
 -- MODEL --init
 initialModel : Model
@@ -46,7 +46,7 @@ initialModel =
      , args = ""
      , post = False
      , gameplays = []
-     , playerScore = 0
+     , playerScore = "__"
      }
 
 init : () -> ( Model, Cmd Msg )
@@ -54,9 +54,9 @@ init _ =
     ( initialModel, Cmd.none )
 
 -- PORTS
-port broadcastScore : Encode.Value -> Cmd msg
+port broadcastScore : (String)-> Cmd msg
 
-port receiveScoreFromPhoenix : (Encode.Value -> msg) -> Sub msg
+port receiveScoreFromPhoenix : (String -> msg) -> Sub msg
 
 
 -- UPDATE
@@ -65,18 +65,18 @@ type Msg
   = Command String
   | Args String
   | Post
-  | BroadcastScore Encode.Value
+  | BroadcastScore String
   | CountdownTimer Time.Posix
   | GameLoop Float
   | KeyDown String
   | NoOp
-  | ReceiveScoreFromPhoenix Encode.Value
+  | ReceiveScoreFromPhoenix String
   | SetNewItemPositionX Int
 
 decodeGameplay : Decode.Decoder Gameplay
 decodeGameplay =
      Decode.map Gameplay
-         (Decode.field "player_score" Decode.int)
+         (Decode.field "player_score" Decode.string)
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -99,7 +99,7 @@ update msg model =
         ( model, broadcastScore value )
 
     ReceiveScoreFromPhoenix incomingJsonData ->
-        case Decode.decodeValue decodeGameplay incomingJsonData of
+        case Decode.decodeString decodeGameplay incomingJsonData of
             Ok gameplay ->
                 Debug.log " -- Successfully received score data. --"
                 ( { model | gameplays = gameplay :: model.gameplays }, Cmd.none )
@@ -149,7 +149,6 @@ viewBroadcastScoreButton model =
     let
         broadcastEvent =
             model.playerScore
-                |> Encode.int
                 |> BroadcastScore
                 |> Html.Events.onClick
     in
@@ -162,8 +161,7 @@ viewBroadcastScoreButton model =
 viewGameplayItem : Model -> Gameplay -> Html Msg
 viewGameplayItem model gameplay =
     let
-        displayScore =
-            String.fromInt gameplay.playerScore
+        displayScore = gameplay.playerScore
     in
     div []
       [  text displayScore ]

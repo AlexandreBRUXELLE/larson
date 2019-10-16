@@ -4,9 +4,8 @@ defmodule LarsonWeb.Rabbit do
       IO.puts " wait "
       receive do
         {:basic_deliver, payload, %{correlation_id: ^correlation_id}} ->
-          {n, _} = Integer.parse(payload)
-          IO.puts " received "
-          n
+          payload
+          IO.puts " got : #{payload}"
       end
     end
 
@@ -22,7 +21,7 @@ defmodule LarsonWeb.Rabbit do
       IO.puts " consume "
       AMQP.Basic.consume(channel, queue_name, nil, no_ack: true)
       correlation_id = :erlang.unique_integer |> :erlang.integer_to_binary |> Base.encode64
-      request = to_string(message)
+      request = message
       IO.puts " publish #{correlation_id}"
       AMQP.Basic.publish(channel, "", "rpc_queue", request, reply_to: queue_name, correlation_id: correlation_id)
 
