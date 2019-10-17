@@ -3,7 +3,7 @@ port module Main exposing (main, Msg)
 import Browser
 import Browser.Events
 -- import Html exposing (..)
-import Html exposing (Html, button, div, text, input)
+import Html exposing (Html, button, div, text, input, h2, li, span, strong, ul)
 -- import Html.Attributes exposing (..)
 import Html.Attributes exposing ( type_, value, placeholder, style)
 -- import Html.Events
@@ -126,6 +126,7 @@ view model =
     , button [ onClick Post ] [ text "Run" ]
     , viewValidation model
     , viewBroadcast model
+    , viewGameplaysList model
     ]
 
 viewBroadcast model =
@@ -158,10 +159,19 @@ viewBroadcastScoreButton model =
         ]
         [ text "Broadcast Score Over Socket" ]
 
+
+viewGameplaysList : Model -> Html Msg
+viewGameplaysList model =
+    ul [ Html.Attributes.class "gameplays-list" ]
+        (List.map (viewGameplayItem model) model.gameplays)
+
 viewGameplayItem : Model -> Gameplay -> Html Msg
 viewGameplayItem model gameplay =
     let
-        displayScore = gameplay.playerScore
+        displayScore =
+            (gameplay.playerScore)
     in
-    div []
-      [  text displayScore ]
+    li [ Html.Attributes.class "gameplay-item" ]
+        [ strong [] [ text ("glup" ++ ": ") ]
+        , span [] [ text displayScore ]
+        ]

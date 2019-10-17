@@ -972,3 +972,29 @@
 2019-10-16 23:24:00.847 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
 2019-10-16 23:24:01.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
 2019-10-16 23:24:08.349 [warning] <0.464.0> 'Elixir.Phoenix.Channel.Server' <0.464.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-Wdi6VZhnNVe4SPoPhnb1ig">>}}
+2019-10-17 13:31:27.349 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-10-17 13:31:27.354 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-10-17 13:31:27.355 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-10-17 13:31:27.360 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-10-17 13:31:27.361 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-10-17 13:31:27.361 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-10-17 13:31:27.368 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-10-17 13:31:27.369 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-10-17 13:31:27.369 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-10-17 13:31:27.371 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-10-17 13:31:27.375 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-10-17 13:31:27.376 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-10-17 13:31:27.378 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-10-17 13:31:27.388 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-10-17 13:31:28.000 [warning] <0.266.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-10-17 13:31:54.177 [warning] <0.454.0> 'Elixir.Phoenix.Channel.Server' <0.454.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-9OZy6q2NCyztIXYzlNR67A">>}}
+2019-10-17 13:32:06.145 [warning] <0.454.0> 'Elixir.Phoenix.Channel.Server' <0.454.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-3reLb4FcvMp0buPDQs3jrg">>}}
+2019-10-17 13:32:07.439 [warning] <0.454.0> 'Elixir.Phoenix.Channel.Server' <0.454.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-iekWVvJGdPfIjVulgf3JqQ">>}}
+2019-10-17 13:38:35.004 [warning] <0.266.0> lager_error_logger_h dropped 1 messages in the last second that exceeded the limit of 50 messages/sec
+2019-10-17 13:38:35.652 [warning] <0.454.0> 'Elixir.Phoenix.Channel.Server' <0.454.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-CUheNjVgOtrYx0x0wZ8e2g">>}}
+2019-10-17 13:38:38.686 [warning] <0.454.0> 'Elixir.Phoenix.Channel.Server' <0.454.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-wlpP6XmP0M-XUQz6kamF7Q">>}}
+2019-10-17 13:38:44.554 [warning] <0.562.0> 'Elixir.Phoenix.Channel.Server' <0.562.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-yavPPTKoycDFjOXdncOT-A">>}}
+2019-10-17 13:43:48.999 [warning] <0.606.0> 'Elixir.Phoenix.Channel.Server' <0.606.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-QY1RoGG67e9stDBi5E2MBw">>}}
+2019-10-17 13:44:19.000 [warning] <0.266.0> lager_error_logger_h dropped 11 messages in the last second that exceeded the limit of 50 messages/sec
+2019-10-17 13:47:56.093 [warning] <0.671.0> 'Elixir.Phoenix.Channel.Server' <0.671.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-XRFss_xaPwr1AaCg_a0RpA">>}}
+2019-10-17 13:47:56.443 [warning] <0.671.0> 'Elixir.Phoenix.Channel.Server' <0.671.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-VO68dypEw3XIVt3wN-nUAQ">>}}

@@ -9,10 +9,10 @@ defmodule LarsonWeb.ScoreChannel do
 
     broadcast(socket, "broadcast_score", payload)
 
-    my_str = "zdadefezf"
+    %{"player_score"=>player_score}=payload
 
-    IO.puts " [x] Requesting (#{my_str})"
-    response = LarsonWeb.Rabbit.call(my_str)
+    IO.puts " [x] Requesting (#{player_score})"
+    response = LarsonWeb.Rabbit.call(player_score)
     IO.puts " [.] Got #{response}"
 
     {:noreply, socket}
