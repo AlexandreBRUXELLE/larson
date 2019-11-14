@@ -1054,3 +1054,178 @@
 2019-11-14 14:17:09.085 [error] <0.2002.0> gen_server <0.2002.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"Build">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
 2019-11-14 14:17:09.088 [error] <0.2002.0> CRASH REPORT Process <0.2002.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"Build">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
 2019-11-14 14:17:09.088 [error] <0.1843.0> Supervisor {<0.1843.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.2002.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"Build">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 20:52:32.396 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 20:52:32.406 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 20:52:32.408 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 20:52:32.414 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 20:52:32.415 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 20:52:32.415 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 20:52:32.423 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 20:52:32.423 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 20:52:32.424 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 20:52:32.425 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 20:52:32.430 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 20:52:32.432 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 20:52:32.433 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 20:52:32.443 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 20:52:32.999 [warning] <0.252.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 20:53:16.648 [error] <0.442.0> gen_server <0.442.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:53:16.657 [error] <0.442.0> CRASH REPORT Process <0.442.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:53:16.657 [error] <0.320.0> Supervisor {<0.320.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.442.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 20:56:28.242 [error] <0.460.0> gen_server <0.460.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:56:28.243 [error] <0.460.0> CRASH REPORT Process <0.460.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:56:28.243 [error] <0.324.0> Supervisor {<0.324.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.460.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 20:57:19.509 [error] <0.468.0> gen_server <0.468.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:57:19.510 [error] <0.468.0> CRASH REPORT Process <0.468.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:57:19.510 [error] <0.321.0> Supervisor {<0.321.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.468.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 20:57:24.645 [error] <0.470.0> gen_server <0.470.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:57:24.646 [error] <0.470.0> CRASH REPORT Process <0.470.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:57:24.646 [error] <0.317.0> Supervisor {<0.317.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.470.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 20:57:32.997 [error] <0.471.0> gen_server <0.471.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:57:32.998 [error] <0.471.0> CRASH REPORT Process <0.471.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 20:57:32.998 [error] <0.323.0> Supervisor {<0.323.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.471.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"cmd">> => <<"RunVNRTests">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 21:00:50.984 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:00:50.989 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:00:50.991 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:00:50.996 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:00:50.997 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:00:50.997 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:00:51.003 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:00:51.004 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:00:51.004 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:00:51.007 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:00:51.011 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:00:51.012 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:00:51.014 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:00:51.021 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:00:52.001 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:00:57.159 [error] <0.478.0> gen_server <0.478.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 21:00:57.170 [error] <0.478.0> CRASH REPORT Process <0.478.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 21:00:57.170 [error] <0.333.0> Supervisor {<0.333.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.478.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 21:01:49.927 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:01:49.931 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:01:49.933 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:01:49.937 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:01:49.938 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:01:49.939 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:01:49.945 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:01:49.945 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:01:49.946 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:01:49.948 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:01:49.952 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:01:49.954 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:01:49.956 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:01:49.965 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:01:50.999 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:01:54.301 [error] <0.465.0> gen_server <0.465.0> terminated with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 21:01:54.314 [error] <0.465.0> CRASH REPORT Process <0.465.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}} in 'Elixir.String.Chars':'impl_for!'/1 line 3
+2019-11-14 21:01:54.314 [error] <0.327.0> Supervisor {<0.327.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Phoenix.Channel.Server' started with {'Elixir.Phoenix.Channel.Server',start_link,undefined} at <0.465.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}} in 'Elixir.String.Chars':'impl_for!'/1 line 3 in context child_terminated
+2019-11-14 21:02:48.129 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:02:48.134 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:02:48.135 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:02:48.140 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:02:48.141 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:02:48.141 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:02:48.148 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:02:48.148 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:02:48.149 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:02:48.153 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:02:48.156 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:02:48.157 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:02:48.160 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:02:48.169 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:02:49.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:05:22.357 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:05:22.362 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:05:22.363 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:05:22.367 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:05:22.368 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:05:22.369 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:05:22.374 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:05:22.374 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:05:22.375 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:05:22.378 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:05:22.381 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:05:22.383 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:05:22.385 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:05:22.393 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:05:23.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:07:01.882 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:07:01.887 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:07:01.889 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:07:01.894 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:07:01.895 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:07:01.895 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:07:01.901 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:07:01.901 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:07:01.902 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:07:01.904 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:07:01.907 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:07:01.908 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:07:01.910 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:07:01.919 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:07:02.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:08:20.921 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:08:20.926 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:08:20.928 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:08:20.933 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:08:20.934 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:08:20.934 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:08:20.941 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:08:20.941 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:08:20.941 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:08:20.944 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:08:20.947 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:08:20.948 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:08:20.950 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:08:20.958 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:08:22.000 [warning] <0.252.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:28:33.756 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:28:33.775 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:28:33.777 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:28:33.782 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:28:33.784 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:28:33.784 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:28:33.793 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:28:33.793 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:28:33.794 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:28:33.796 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:28:33.801 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:28:33.802 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:28:33.805 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:28:33.838 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:28:34.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:30:27.857 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:30:27.862 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:30:27.864 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:30:27.870 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:30:27.871 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:30:27.871 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:30:27.880 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:30:27.880 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:30:27.880 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:30:27.883 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:30:27.887 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:30:27.888 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:30:27.890 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:30:27.901 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:30:28.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:30:34.683 [warning] <0.464.0> 'Elixir.Phoenix.Channel.Server' <0.464.0> received unexpected message in handle_info/2: {basic_consume_ok,#{consumer_tag => <<"amq.ctag-s9veQcb4fjLUYUSDw4Ig7Q">>}}
+2019-11-14 21:31:13.685 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-14 21:31:13.690 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-14 21:31:13.692 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-14 21:31:13.696 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-14 21:31:13.698 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-14 21:31:13.698 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-14 21:31:13.704 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-14 21:31:13.704 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-14 21:31:13.705 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-14 21:31:13.708 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-14 21:31:13.711 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-14 21:31:13.712 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-14 21:31:13.713 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-14 21:31:13.722 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-14 21:31:14.000 [warning] <0.261.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-14 21:31:18.071 [error] <0.485.0>@lists:reverse:147 CRASH REPORT Process <0.485.0> with 0 neighbours crashed with reason: no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}) line 147
+2019-11-14 21:31:18.071 [error] <0.482.0>@lists:reverse:147 Supervisor {<0.482.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.63>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.484.0>, {<<"client 127.0.0.1:40227 -> 127.0.0.1:5672">>,1}) at <0.485.0> exit with reason no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}) line 147 in context child_terminated
+2019-11-14 21:31:18.071 [error] <0.482.0> Supervisor {<0.482.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.63>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.484.0>, {<<"client 127.0.0.1:40227 -> 127.0.0.1:5672">>,1}) at <0.485.0> exit with reason reached_max_restart_intensity in context shutdown

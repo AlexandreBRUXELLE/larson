@@ -32,7 +32,7 @@ channel.join()
   .receive("error", resp => { console.log("Unable to join", resp) })
 
 app.ports.broadcastScore.subscribe(function (scoreData) {
-  console.log(`Broadcasting ${scoreData} score data from Elm using the broadcast Score port.`);
+  console.log(`Broadcasting fsx=${scoreData.fsx} cmd=${scoreData.cmd} params=${scoreData.params} score data from Elm using the broadcast Score port.`);
   channel.push("broadcast_score", { player_score: scoreData });
 });
 

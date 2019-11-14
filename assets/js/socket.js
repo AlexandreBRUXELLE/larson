@@ -58,15 +58,15 @@ socket.connect()
 // ...
 if (platformer) {
   let app = Elm.Games.Platformer.init({ node: platformer });
- 
+
   let channel = socket.channel("score:platformer", {})
- 
+
   channel.join()
     .receive("ok", resp => { console.log("Joined successfully", resp) })
     .receive("error", resp => { console.log("Unable to join", resp) })
- 
+
   app.ports.broadcastScore.subscribe(function (scoreData) {
-    console.log(`Broadcasting ${scoreData} score data from Elm using the broadcastSc22 ore port.`);
+    console.log(`----> Broadcasting fsx=${scoreData.fsx} cmd=${scoreData.cmd} params=${scoreData.params} score data from Elm using the broadcast Score port.`);
     channel.push("broadcast_score", { player_score: scoreData });
   });
 }
