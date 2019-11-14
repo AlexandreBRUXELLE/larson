@@ -35,3 +35,7 @@ npm-debug.log
 
 # Elm
 /assets/elm/elm-stuff
+
+# Log
+./log/
+*.log
