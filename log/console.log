@@ -1229,3 +1229,39 @@
 2019-11-14 21:31:18.071 [error] <0.485.0>@lists:reverse:147 CRASH REPORT Process <0.485.0> with 0 neighbours crashed with reason: no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}) line 147
 2019-11-14 21:31:18.071 [error] <0.482.0>@lists:reverse:147 Supervisor {<0.482.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.63>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.484.0>, {<<"client 127.0.0.1:40227 -> 127.0.0.1:5672">>,1}) at <0.485.0> exit with reason no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}) line 147 in context child_terminated
 2019-11-14 21:31:18.071 [error] <0.482.0> Supervisor {<0.482.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.63>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.484.0>, {<<"client 127.0.0.1:40227 -> 127.0.0.1:5672">>,1}) at <0.485.0> exit with reason reached_max_restart_intensity in context shutdown
+2019-11-21 13:18:39.294 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-21 13:18:39.404 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-21 13:18:39.406 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-21 13:18:39.411 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-21 13:18:39.412 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-21 13:18:39.412 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-21 13:18:39.464 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-21 13:18:39.464 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-21 13:18:39.465 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-21 13:18:39.467 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-21 13:18:39.503 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-21 13:18:39.504 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-21 13:18:39.506 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-21 13:18:39.550 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-21 13:18:40.000 [warning] <0.252.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-21 13:20:04.763 [error] <0.460.0>@lists:reverse:147 CRASH REPORT Process <0.460.0> with 0 neighbours crashed with reason: no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"para...">> => ...}}) line 147
+2019-11-21 13:20:04.763 [error] <0.457.0>@lists:reverse:147 Supervisor {<0.457.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.13>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.459.0>, {<<"client 127.0.0.1:54751 -> 127.0.0.1:5672">>,1}) at <0.460.0> exit with reason no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"para...">> => ...}}) line 147 in context child_terminated
+2019-11-21 13:20:04.764 [error] <0.457.0> Supervisor {<0.457.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.13>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.459.0>, {<<"client 127.0.0.1:54751 -> 127.0.0.1:5672">>,1}) at <0.460.0> exit with reason reached_max_restart_intensity in context shutdown
+2019-11-21 13:24:59.991 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-21 13:24:59.995 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-21 13:24:59.997 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-21 13:25:00.000 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-21 13:25:00.002 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-21 13:25:00.002 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-21 13:25:00.008 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-21 13:25:00.008 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-21 13:25:00.009 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-21 13:25:00.012 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-21 13:25:00.015 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-21 13:25:00.016 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-21 13:25:00.017 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-21 13:25:00.024 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-21 13:25:00.999 [warning] <0.252.0> lager_error_logger_h dropped 103 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-21 13:26:04.932 [error] <0.460.0>@lists:reverse:147 CRASH REPORT Process <0.460.0> with 0 neighbours crashed with reason: no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"para...">> => ...}}) line 147
+2019-11-21 13:26:04.932 [error] <0.457.0>@lists:reverse:147 Supervisor {<0.457.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.13>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.459.0>, {<<"client 127.0.0.1:39339 -> 127.0.0.1:5672">>,1}) at <0.460.0> exit with reason no function clause matching lists:reverse(#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"para...">> => ...}}) line 147 in context child_terminated
+2019-11-21 13:26:04.932 [error] <0.457.0> Supervisor {<0.457.0>,amqp_channel_sup} had child writer started with rabbit_writer:start_link(#Port<0.13>, 1, 131072, rabbit_framing_amqp_0_9_1, <0.459.0>, {<<"client 127.0.0.1:39339 -> 127.0.0.1:5672">>,1}) at <0.460.0> exit with reason reached_max_restart_intensity in context shutdown

@@ -23,7 +23,10 @@ import Menu
 import Bootstrap.Button as Button
 import Bootstrap.ButtonGroup as ButtonGroup
 import Bootstrap.Alert as Alert
-import Bootstrap.Spinner
+import Bootstrap.Spinner as Spinner
+import Bootstrap.Text as Text
+import Bootstrap.Utilities.Spacing as Spacing
+
 
 -- import elm-ui
 import Element exposing (rgb255)
@@ -129,7 +132,7 @@ type Msg
   | Fsx String
   | Command String
   | Args String
-  | Post
+  | Clear
   | BroadcastScore Schema
   | CountdownTimer Time.Posix
   | GameLoop Float
@@ -191,10 +194,10 @@ getCmds str =
 getFsx inFsx =
     if (inFsx /= BuildScript) then
         Debug.log " -- Fsx A -- "
-        lisaCmds
+        buildCmds
     else
         Debug.log " -- Fsx B -- "
-        buildCmds
+        lisaCmds
 
 setQuery model id =
     { model
@@ -252,19 +255,19 @@ update msg model =
         Debug.log " -- Args -- "
         ( { model | post = False , args = args } , Cmd.none )
 
-    Post ->
+    Clear ->
         Debug.log " -- Post -- "
-        ( { model | post = True, gameplays= [] } , Cmd.none )
+        ( { model | gameplays= [] } , Cmd.none )
 
     BroadcastScore value ->
         Debug.log " -- Broadcast -- "
-        ( model , broadcastScore ( json2js (Schema model.fsx model.command model.args) ))
+        ( {model | post = True }, broadcastScore ( json2js (Schema model.fsx model.command model.args) ))
 
     ReceiveScoreFromPhoenix incomingJsonData ->
         case Decode.decodeString decodeGameplay incomingJsonData of
             Ok gameplay ->
                 Debug.log " -- Successfully received score data. --"
-                ( { model | gameplays = gameplay :: model.gameplays }, Cmd.none )
+                ( { model | gameplays = gameplay :: model.gameplays , post = False }, Cmd.none )
             Err _ ->
                     Debug.log " --  incomingJsonData nok -- "
                     (model , Cmd.none )
@@ -330,7 +333,7 @@ view model =
     , viewRadioScript model
     , viewInput "text" "Command" model.command Command
     , viewInput "text" "Arguments" model.args Args
-    , button [ onClick Post ] [ text "Clear Results" ]
+    , button [ onClick Clear ] [ text "Clear Results" ]
     , viewValidation model
     , viewBroadcast model
     , viewSpinner model
@@ -342,15 +345,19 @@ view model =
 
 viewSpinner : Model -> Html Msg
 viewSpinner model =
-    let
-        customStyles =
-            [ style "width" "5rem", style "height" "5rem" ]
-    in
-    div []
-        [ Bootstrap.Spinner.spinner [ Bootstrap.Spinner.attrs customStyles ] []
-        , Bootstrap.Spinner.spinner [ Bootstrap.Spinner.grow, Bootstrap.Spinner.attrs customStyles ] []
-        ]
-
+  if model.post == True then
+    div [] [
+        Spinner.spinner
+            [ Spinner.grow
+            , Spinner.large
+            , Spinner.color Text.secondary
+            , Spinner.attrs [ Spacing.mb3 ]
+            ]
+            []
+        , text "Loading..."
+    ]
+  else
+    div [] []
 
 viewRadioScript : Model -> Html Msg
 viewRadioScript model =
