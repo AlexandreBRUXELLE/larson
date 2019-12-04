@@ -2087,3 +2087,984 @@
      Reason:     reached_max_restart_intensity
      Offender:   [{pid,<0.460.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.13>,1,131072,rabbit_framing_amqp_0_9_1,<0.459.0>,{<<"client 127.0.0.1:39339 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
 
+2019-11-21 15:55:22 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.461.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.458.0>,<0.452.0>,<0.448.0>,<0.447.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.458.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:41633 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 666
+  neighbours:
+2019-11-21 15:55:22 =SUPERVISOR REPORT====
+     Supervisor: {<0.458.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.461.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.14>,1,131072,rabbit_framing_amqp_0_9_1,<0.460.0>,{<<"client 127.0.0.1:41633 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-21 15:55:22 =SUPERVISOR REPORT====
+     Supervisor: {<0.458.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.461.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.14>,1,131072,rabbit_framing_amqp_0_9_1,<0.460.0>,{<<"client 127.0.0.1:41633 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-21 16:02:20 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.496.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.493.0>,<0.487.0>,<0.485.0>,<0.484.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.493.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:35099 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 653
+  neighbours:
+2019-11-21 16:02:20 =SUPERVISOR REPORT====
+     Supervisor: {<0.493.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.496.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.20>,1,131072,rabbit_framing_amqp_0_9_1,<0.495.0>,{<<"client 127.0.0.1:35099 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-21 16:02:20 =SUPERVISOR REPORT====
+     Supervisor: {<0.493.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.496.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.20>,1,131072,rabbit_framing_amqp_0_9_1,<0.495.0>,{<<"client 127.0.0.1:35099 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-21 16:02:55 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.466.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.463.0>,<0.457.0>,<0.453.0>,<0.452.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.463.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:33171 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-21 16:02:55 =SUPERVISOR REPORT====
+     Supervisor: {<0.463.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.466.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.15>,1,131072,rabbit_framing_amqp_0_9_1,<0.465.0>,{<<"client 127.0.0.1:33171 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-21 16:02:55 =SUPERVISOR REPORT====
+     Supervisor: {<0.463.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.466.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.15>,1,131072,rabbit_framing_amqp_0_9_1,<0.465.0>,{<<"client 127.0.0.1:33171 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-21 16:03:08 =ERROR REPORT====
+** Generic server <0.454.0> terminating 
+** Last message in was socket_closed
+** When Server state == {state,amqp_network_connection,{state,#Port<0.15>,<<"client 127.0.0.1:33171 -> 127.0.0.1:5672">>,10,<0.459.0>,131072,<0.453.0>,undefined,false},<0.458.0>,{amqp_params_network,<<"guest">>,<<"guest">>,<<"/">>,"localhost",5672,0,0,10,60000,none,[fun amqp_auth_mechanisms:plain/3,fun amqp_auth_mechanisms:amqplain/3],[],[]},0,[{<<"capabilities">>,table,[{<<"publisher_confirms">>,bool,true},{<<"exchange_exchange_bindings">>,bool,true},{<<"basic.nack">>,bool,true},{<<"consumer_cancel_notify">>,bool,true},{<<"connection.blocked">>,bool,true},{<<"consumer_priorities">>,bool,true},{<<"authentication_failure_close">>,bool,true},{<<"per_consumer_qos">>,bool,true},{<<"direct_reply_to">>,bool,true}]},{<<"cluster_name">>,longstr,<<"rabbit@6d02b9922574">>},{<<"copyright">>,longstr,<<"Copyright (C) 2007-2016 Pivotal Software, Inc.">>},{<<"information">>,longstr,<<"Licensed under the MPL.  See http://www.rabbitmq.com/">>},{<<"platform">>,longstr,<<"Erlang/OTP">>},{<<"product">>,longstr,<<"RabbitMQ">>},{<<"version">>,longstr,<<"3.6.6">>}],none,false}
+** Reason for termination ==
+** socket_closed_unexpectedly
+2019-11-21 16:03:08 =CRASH REPORT====
+  crasher:
+    initial call: amqp_gen_connection:init/1
+    pid: <0.454.0>
+    registered_name: []
+    exception exit: {socket_closed_unexpectedly,[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.452.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.452.0>]
+    dictionary: [{gen_server_call_timeout,60000},{process_name,{amqp_gen_connection,<<"client 127.0.0.1:33171 -> 127.0.0.1:5672">>}}]
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 13405
+  neighbours:
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.452.0>,amqp_connection_sup}
+     Context:    child_terminated
+     Reason:     socket_closed_unexpectedly
+     Offender:   [{pid,<0.454.0>},{name,connection},{mfargs,{amqp_gen_connection,start_link,[<0.453.0>,{amqp_params_network,<<"guest">>,<<"guest">>,<<"/">>,"localhost",5672,0,0,10,60000,none,[fun amqp_auth_mechanisms:plain/3,fun amqp_auth_mechanisms:amqplain/3],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.452.0>,amqp_connection_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.454.0>},{name,connection},{mfargs,{amqp_gen_connection,start_link,[<0.453.0>,{amqp_params_network,<<"guest">>,<<"guest">>,<<"/">>,"localhost",5672,0,0,10,60000,none,[fun amqp_auth_mechanisms:plain/3,fun amqp_auth_mechanisms:amqplain/3],[],[]}]}},{restart_type,intrinsic},{shutdown,brutal_kill},{child_type,worker}]
+
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.62.0>,user_sup}
+     Context:    child_terminated
+     Reason:     eio
+     Offender:   [{pid,<0.63.0>},{mod,user_sup}]
+
+2019-11-21 16:03:08 =ERROR REPORT====
+** Generic server <0.62.0> terminating 
+** Last message in was {'EXIT',<0.63.0>,eio}
+** When Server state == {state,user_sup,undefined,<0.63.0>,{<0.62.0>,user_sup}}
+** Reason for termination ==
+** eio
+2019-11-21 16:03:08 =CRASH REPORT====
+  crasher:
+    initial call: supervisor_bridge:user_sup/1
+    pid: <0.62.0>
+    registered_name: []
+    exception exit: {eio,[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [kernel_sup,<0.46.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.48.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1799
+  neighbours:
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {local,kernel_sup}
+     Context:    child_terminated
+     Reason:     eio
+     Offender:   [{pid,<0.62.0>},{id,user},{mfargs,{user_sup,start,[]}},{restart_type,temporary},{shutdown,2000},{child_type,supervisor}]
+
+2019-11-21 16:03:08 =ERROR REPORT====
+** gen_event handler 'Elixir.Logger.Backends.Console' crashed.
+** Was installed in 'Elixir.Logger'
+** Last event was: {error,<0.45.0>,{'Elixir.Logger',[[<<"GenServer ">>,<<"#PID<0.62.0>">>,<<" terminating">>,[<<"\n** (stop) ">>|<<":eio">>],<<"\nLast message">>,[],<<": ">>,<<"{:EXIT, #PID<0.63.0>, :eio}">>],<<"\nState: ">>,<<"{:state, :user_sup, :undefined, #PID<0.63.0>, {#PID<0.62.0>, :user_sup}}">>],{{2019,11,21},{16,3,8,432}},[{crash_reason,{eio,[]}},{function,<<"error_info/7">>},{module,gen_server},{line,889},{file,<<"gen_server.erl">>},{pid,<0.62.0>}]}}
+** When handler state == #{'__struct__' => 'Elixir.Logger.Backends.Console',buffer => [],buffer_size => 0,colors => #{debug => cyan,enabled => true,error => red,info => normal,warn => yellow},device => user,format => [<<"[">>,level,<<"] ">>,message,<<"\n">>],level => nil,max_buffer => 32,metadata => [request_id],output => nil,ref => nil}
+** Reason == {#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"no device registered with the name :user">>},[{'Elixir.Logger.Backends.Console',async_io,2,[{file,"lib/logger/backends/console.ex"},{line,156}]},{'Elixir.Logger.Backends.Console',log_event,5,[{file,"lib/logger/backends/console.ex"},{line,141}]},{'Elixir.Logger.Backends.Console',handle_event,2,[{file,"lib/logger/backends/console.ex"},{line,45}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,577}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,559}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,300}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {local,standard_error_sup}
+     Context:    child_terminated
+     Reason:     eio
+     Offender:   [{pid,<0.61.0>},{mod,standard_error}]
+
+2019-11-21 16:03:08 =ERROR REPORT====
+** Generic server <0.218.0> terminating 
+** Last message in was {gen_event_EXIT,'Elixir.Logger.Backends.Console',{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"no device registered with the name :user">>},[{'Elixir.Logger.Backends.Console',async_io,2,[{file,"lib/logger/backends/console.ex"},{line,156}]},{'Elixir.Logger.Backends.Console',log_event,5,[{file,"lib/logger/backends/console.ex"},{line,141}]},{'Elixir.Logger.Backends.Console',handle_event,2,[{file,"lib/logger/backends/console.ex"},{line,45}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,577}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,559}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,300}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}}
+** When Server state == {'Elixir.Logger','Elixir.Logger.Backends.Console'}
+** Reason for termination ==
+** {'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"no device registered with the name :user">>},[{'Elixir.Logger.Backends.Console',async_io,2,[{file,"lib/logger/backends/console.ex"},{line,156}]},{'Elixir.Logger.Backends.Console',log_event,5,[{file,"lib/logger/backends/console.ex"},{line,141}]},{'Elixir.Logger.Backends.Console',handle_event,2,[{file,"lib/logger/backends/console.ex"},{line,45}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,577}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,559}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,300}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+2019-11-21 16:03:08 =ERROR REPORT====
+** Generic server standard_error_sup terminating 
+** Last message in was {'EXIT',<0.61.0>,eio}
+** When Server state == {state,standard_error,undefined,<0.61.0>,{local,standard_error_sup}}
+** Reason for termination ==
+** eio
+2019-11-21 16:03:08 =CRASH REPORT====
+  crasher:
+    initial call: supervisor_bridge:standard_error/1
+    pid: <0.60.0>
+    registered_name: standard_error_sup
+    exception exit: {eio,[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [kernel_sup,<0.46.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.48.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 1867
+  neighbours:
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {local,kernel_sup}
+     Context:    child_terminated
+     Reason:     eio
+     Offender:   [{pid,<0.60.0>},{id,standard_error},{mfargs,{standard_error,start_link,[]}},{restart_type,temporary},{shutdown,2000},{child_type,supervisor}]
+
+2019-11-21 16:03:08 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.218.0>
+    registered_name: []
+    exception exit: {{'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"no device registered with the name :user">>},[{'Elixir.Logger.Backends.Console',async_io,2,[{file,"lib/logger/backends/console.ex"},{line,156}]},{'Elixir.Logger.Backends.Console',log_event,5,[{file,"lib/logger/backends/console.ex"},{line,141}]},{'Elixir.Logger.Backends.Console',handle_event,2,[{file,"lib/logger/backends/console.ex"},{line,45}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,577}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,559}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,300}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}},[{gen_server,handle_common_reply,8,[{file,"gen_server.erl"},{line,751}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.Logger.BackendSupervisor','Elixir.Logger.Supervisor',<0.213.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.217.0>,<0.215.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 17343
+  neighbours:
+2019-11-21 16:03:08 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.BackendSupervisor'}
+     Context:    child_terminated
+     Reason:     {'EXIT',{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"no device registered with the name :user">>},[{'Elixir.Logger.Backends.Console',async_io,2,[{file,"lib/logger/backends/console.ex"},{line,156}]},{'Elixir.Logger.Backends.Console',log_event,5,[{file,"lib/logger/backends/console.ex"},{line,141}]},{'Elixir.Logger.Backends.Console',handle_event,2,[{file,"lib/logger/backends/console.ex"},{line,45}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,577}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,559}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,300}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+     Offender:   [{pid,<0.218.0>},{id,'Elixir.Logger.Backends.Console'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.Logger.Backends.Console',console}]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:06:09 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.460.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.457.0>,<0.451.0>,<0.447.0>,<0.446.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.457.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:52601 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 666
+  neighbours:
+2019-11-28 14:06:09 =SUPERVISOR REPORT====
+     Supervisor: {<0.457.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<"BuildDebug">>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.460.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.13>,1,131072,rabbit_framing_amqp_0_9_1,<0.459.0>,{<<"client 127.0.0.1:52601 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:06:09 =SUPERVISOR REPORT====
+     Supervisor: {<0.457.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.460.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.13>,1,131072,rabbit_framing_amqp_0_9_1,<0.459.0>,{<<"client 127.0.0.1:52601 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:17:36 =ERROR REPORT====
+** Generic server <0.457.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.457.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.453.0>}
+** Reason for termination ==
+** {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:17:36 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.457.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+    ancestors: [<0.331.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.331.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 10391
+  neighbours:
+2019-11-28 14:17:36 =SUPERVISOR REPORT====
+     Supervisor: {<0.331.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.457.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:18:18 =ERROR REPORT====
+** Generic server <0.463.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"3">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"5">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.463.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.453.0>}
+** Reason for termination ==
+** {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,wake_up,3,[{file,"proc_lib.erl"},{line,259}]}]}
+2019-11-28 14:18:18 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.463.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,wake_up,3,[{file,"proc_lib.erl"},{line,259}]}]
+    ancestors: [<0.327.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.327.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 10483
+  neighbours:
+2019-11-28 14:18:18 =SUPERVISOR REPORT====
+     Supervisor: {<0.327.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,wake_up,3,[{file,"proc_lib.erl"},{line,259}]}]}
+     Offender:   [{pid,<0.463.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:18:22 =ERROR REPORT====
+** Generic server <0.464.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"6">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"7">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.464.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"6">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.453.0>}
+** Reason for termination ==
+** {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:18:22 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.464.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+    ancestors: [<0.331.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.331.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 10470
+  neighbours:
+2019-11-28 14:18:22 =SUPERVISOR REPORT====
+     Supervisor: {<0.331.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.464.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:18:23 =ERROR REPORT====
+** Generic server <0.465.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"9">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"10">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.465.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"9">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.453.0>}
+** Reason for termination ==
+** {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:18:23 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.465.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+    ancestors: [<0.331.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.331.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 10494
+  neighbours:
+2019-11-28 14:18:23 =SUPERVISOR REPORT====
+     Supervisor: {<0.331.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,11}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.465.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:20:32 =ERROR REPORT====
+** Generic server <0.465.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.465.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.462.0>}
+** Reason for termination ==
+** {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,14}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:20:32 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.465.0>
+    registered_name: []
+    exception error: bad argument: [{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,14}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+    ancestors: [<0.327.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.327.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 10396
+  neighbours:
+2019-11-28 14:20:32 =SUPERVISOR REPORT====
+     Supervisor: {<0.327.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,iolist_to_binary,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[]},{'Elixir.Jason',decode,2,[{file,"lib/jason.ex"},{line,55}]},{'Elixir.Jason','decode!',2,[{file,"lib/jason.ex"},{line,76}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,14}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.465.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:21:15 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.503.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.500.0>,<0.494.0>,<0.490.0>,<0.489.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.500.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:54065 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-28 14:21:15 =SUPERVISOR REPORT====
+     Supervisor: {<0.500.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.503.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.68>,1,131072,rabbit_framing_amqp_0_9_1,<0.502.0>,{<<"client 127.0.0.1:54065 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:21:15 =SUPERVISOR REPORT====
+     Supervisor: {<0.500.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.503.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.68>,1,131072,rabbit_framing_amqp_0_9_1,<0.502.0>,{<<"client 127.0.0.1:54065 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:22:11 =ERROR REPORT====
+** Generic server <0.465.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.465.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.461.0>}
+** Reason for termination ==
+** {#{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}},[{'Elixir.String.Chars','impl_for!',1,[{file,"lib/string/chars.ex"},{line,3}]},{'Elixir.String.Chars',to_string,1,[{file,"lib/string/chars.ex"},{line,22}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:22:11 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.465.0>
+    registered_name: []
+    exception error: {#{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}},[{'Elixir.String.Chars','impl_for!',1,[{file,"lib/string/chars.ex"},{line,3}]},{'Elixir.String.Chars',to_string,1,[{file,"lib/string/chars.ex"},{line,22}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.330.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.330.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 11402
+  neighbours:
+2019-11-28 14:22:11 =SUPERVISOR REPORT====
+     Supervisor: {<0.330.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {#{'__exception__' => true,'__struct__' => 'Elixir.Protocol.UndefinedError',description => <<>>,protocol => 'Elixir.String.Chars',value => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}},[{'Elixir.String.Chars','impl_for!',1,[{file,"lib/string/chars.ex"},{line,3}]},{'Elixir.String.Chars',to_string,1,[{file,"lib/string/chars.ex"},{line,22}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,15}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.465.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:29:07 =ERROR REPORT====
+** Generic server <0.458.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.458.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.455.0>}
+** Reason for termination ==
+** {{badmatch,<<"{\"cmd\":\"build\",\"fsx\":\"build.fsx\",\"params\":\" \"}">>},[{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,18}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:29:07 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.458.0>
+    registered_name: []
+    exception error: {{badmatch,<<"{\"cmd\":\"build\",\"fsx\":\"build.fsx\",\"params\":\" \"}">>},[{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,18}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.333.0>,<0.325.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.304.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.333.0>,<0.313.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 8747
+  neighbours:
+2019-11-28 14:29:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.333.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {{badmatch,<<"{\"cmd\":\"build\",\"fsx\":\"build.fsx\",\"params\":\" \"}">>},[{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,18}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.458.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:29:58 =ERROR REPORT====
+** Generic server <0.455.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.455.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.451.0>}
+** Reason for termination ==
+** {{badmatch,<<"{\"cmd\":\"build\",\"fsx\":\"build.fsx\",\"params\":\" \"}">>},[{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,18}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-28 14:29:58 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.455.0>
+    registered_name: []
+    exception error: {{badmatch,<<"{\"cmd\":\"build\",\"fsx\":\"build.fsx\",\"params\":\" \"}">>},[{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,18}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.320.0>,<0.316.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.320.0>,<0.304.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 8747
+  neighbours:
+2019-11-28 14:29:58 =SUPERVISOR REPORT====
+     Supervisor: {<0.320.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {{badmatch,<<"{\"cmd\":\"build\",\"fsx\":\"build.fsx\",\"params\":\" \"}">>},[{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,18}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.455.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-11-28 14:30:43 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.485.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.482.0>,<0.476.0>,<0.472.0>,<0.471.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.482.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:55245 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-28 14:30:43 =SUPERVISOR REPORT====
+     Supervisor: {<0.482.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.485.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.64>,1,131072,rabbit_framing_amqp_0_9_1,<0.484.0>,{<<"client 127.0.0.1:55245 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:30:43 =SUPERVISOR REPORT====
+     Supervisor: {<0.482.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.485.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.64>,1,131072,rabbit_framing_amqp_0_9_1,<0.484.0>,{<<"client 127.0.0.1:55245 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:33:17 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.470.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.467.0>,<0.461.0>,<0.457.0>,<0.456.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.467.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:48001 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-28 14:33:17 =SUPERVISOR REPORT====
+     Supervisor: {<0.467.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.470.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.16>,1,131072,rabbit_framing_amqp_0_9_1,<0.469.0>,{<<"client 127.0.0.1:48001 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:33:17 =SUPERVISOR REPORT====
+     Supervisor: {<0.467.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.470.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.16>,1,131072,rabbit_framing_amqp_0_9_1,<0.469.0>,{<<"client 127.0.0.1:48001 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:36:08 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.502.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.499.0>,<0.493.0>,<0.491.0>,<0.490.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.499.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:49029 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 652
+  neighbours:
+2019-11-28 14:36:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.499.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.502.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.21>,1,131072,rabbit_framing_amqp_0_9_1,<0.501.0>,{<<"client 127.0.0.1:49029 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:36:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.499.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.502.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.21>,1,131072,rabbit_framing_amqp_0_9_1,<0.501.0>,{<<"client 127.0.0.1:49029 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:37:28 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.481.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.478.0>,<0.472.0>,<0.468.0>,<0.467.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.478.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:53555 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-28 14:37:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.478.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.481.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.63>,1,131072,rabbit_framing_amqp_0_9_1,<0.480.0>,{<<"client 127.0.0.1:53555 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:37:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.478.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.481.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.63>,1,131072,rabbit_framing_amqp_0_9_1,<0.480.0>,{<<"client 127.0.0.1:53555 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:38:48 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.513.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.510.0>,<0.504.0>,<0.502.0>,<0.501.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.510.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:44813 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 652
+  neighbours:
+2019-11-28 14:38:48 =SUPERVISOR REPORT====
+     Supervisor: {<0.510.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.513.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.69>,1,131072,rabbit_framing_amqp_0_9_1,<0.512.0>,{<<"client 127.0.0.1:44813 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:38:48 =SUPERVISOR REPORT====
+     Supervisor: {<0.510.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.513.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.69>,1,131072,rabbit_framing_amqp_0_9_1,<0.512.0>,{<<"client 127.0.0.1:44813 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:46:34 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.486.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.483.0>,<0.477.0>,<0.473.0>,<0.472.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.483.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:55495 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-28 14:46:34 =SUPERVISOR REPORT====
+     Supervisor: {<0.483.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.486.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.65>,1,131072,rabbit_framing_amqp_0_9_1,<0.485.0>,{<<"client 127.0.0.1:55495 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:46:34 =SUPERVISOR REPORT====
+     Supervisor: {<0.483.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.486.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.65>,1,131072,rabbit_framing_amqp_0_9_1,<0.485.0>,{<<"client 127.0.0.1:55495 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:48:26 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.519.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.516.0>,<0.510.0>,<0.508.0>,<0.507.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.516.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:41963 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 652
+  neighbours:
+2019-11-28 14:48:26 =SUPERVISOR REPORT====
+     Supervisor: {<0.516.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.519.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.71>,1,131072,rabbit_framing_amqp_0_9_1,<0.518.0>,{<<"client 127.0.0.1:41963 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:48:26 =SUPERVISOR REPORT====
+     Supervisor: {<0.516.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.519.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.71>,1,131072,rabbit_framing_amqp_0_9_1,<0.518.0>,{<<"client 127.0.0.1:41963 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:49:34 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.468.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.465.0>,<0.459.0>,<0.455.0>,<0.454.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.465.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:54853 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-11-28 14:49:34 =SUPERVISOR REPORT====
+     Supervisor: {<0.465.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.468.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.15>,1,131072,rabbit_framing_amqp_0_9_1,<0.467.0>,{<<"client 127.0.0.1:54853 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:49:34 =SUPERVISOR REPORT====
+     Supervisor: {<0.465.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.468.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.15>,1,131072,rabbit_framing_amqp_0_9_1,<0.467.0>,{<<"client 127.0.0.1:54853 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:49:45 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.500.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.497.0>,<0.491.0>,<0.489.0>,<0.488.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.497.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:43617 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 652
+  neighbours:
+2019-11-28 14:49:45 =SUPERVISOR REPORT====
+     Supervisor: {<0.497.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.500.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.21>,1,131072,rabbit_framing_amqp_0_9_1,<0.499.0>,{<<"client 127.0.0.1:43617 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:49:45 =SUPERVISOR REPORT====
+     Supervisor: {<0.497.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.500.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.21>,1,131072,rabbit_framing_amqp_0_9_1,<0.499.0>,{<<"client 127.0.0.1:43617 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:50:28 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.532.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.529.0>,<0.523.0>,<0.521.0>,<0.520.0>,amqp_sup,<0.272.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.529.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:37907 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 652
+  neighbours:
+2019-11-28 14:50:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.529.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.532.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.27>,1,131072,rabbit_framing_amqp_0_9_1,<0.531.0>,{<<"client 127.0.0.1:37907 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-11-28 14:50:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.529.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.532.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.27>,1,131072,rabbit_framing_amqp_0_9_1,<0.531.0>,{<<"client 127.0.0.1:37907 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:33:10 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.480.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.477.0>,<0.471.0>,<0.467.0>,<0.466.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.477.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:44517 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-12-04 22:33:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.477.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.480.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.479.0>,{<<"client 127.0.0.1:44517 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:33:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.477.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.480.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.479.0>,{<<"client 127.0.0.1:44517 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:34:38 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.479.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.476.0>,<0.470.0>,<0.466.0>,<0.465.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.476.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:50721 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-12-04 22:34:38 =SUPERVISOR REPORT====
+     Supervisor: {<0.476.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.479.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.478.0>,{<<"client 127.0.0.1:50721 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:34:38 =SUPERVISOR REPORT====
+     Supervisor: {<0.476.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.479.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.478.0>,{<<"client 127.0.0.1:50721 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:45:31 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.486.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.483.0>,<0.477.0>,<0.473.0>,<0.472.0>,amqp_sup,<0.286.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.483.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:42409 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-12-04 22:45:31 =SUPERVISOR REPORT====
+     Supervisor: {<0.483.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.486.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.485.0>,{<<"client 127.0.0.1:42409 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:45:31 =SUPERVISOR REPORT====
+     Supervisor: {<0.483.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.486.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.485.0>,{<<"client 127.0.0.1:42409 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:47:19 =CRASH REPORT====
+  crasher:
+    initial call: rabbit_writer:enter_mainloop/2
+    pid: <0.480.0>
+    registered_name: []
+    exception error: {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.477.0>,<0.471.0>,<0.467.0>,<0.466.0>,amqp_sup,<0.281.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.477.0>]
+    dictionary: [{process_name,{rabbit_writer,{<<"client 127.0.0.1:47207 -> 127.0.0.1:5672">>,1}}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 665
+  neighbours:
+2019-12-04 22:47:19 =SUPERVISOR REPORT====
+     Supervisor: {<0.477.0>,amqp_channel_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{lists,reverse,[#{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}}],[{file,"lists.erl"},{line,147}]},{rabbit_binary_generator,build_content_frames,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,81}]},{rabbit_binary_generator,build_simple_content_frames,4,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_binary_generator.erl"},{line,70}]},{rabbit_writer,assemble_frames,5,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,312}]},{rabbit_writer,internal_send_command_async,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,342}]},{rabbit_writer,handle_message,3,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,210}]},{rabbit_writer,mainloop1,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,194}]},{rabbit_writer,mainloop,2,[{file,"/home/abruxelle/phoenix/larson/deps/rabbit_common/src/rabbit_writer.erl"},{line,185}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.480.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.479.0>,{<<"client 127.0.0.1:47207 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:47:19 =SUPERVISOR REPORT====
+     Supervisor: {<0.477.0>,amqp_channel_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.480.0>},{name,writer},{mfargs,{rabbit_writer,start_link,[#Port<0.61>,1,131072,rabbit_framing_amqp_0_9_1,<0.479.0>,{<<"client 127.0.0.1:47207 -> 127.0.0.1:5672">>,1}]}},{restart_type,transient},{shutdown,30000},{child_type,worker}]
+
+2019-12-04 22:53:58 =ERROR REPORT====
+** Generic server <0.462.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"1">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"2">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.462.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"1">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.458.0>}
+** Reason for termination ==
+** {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: :ok\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-12-04 22:53:58 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.462.0>
+    registered_name: []
+    exception error: {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: :ok\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.334.0>,<0.330.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.309.0>]
+    message_queue_len: 1
+    messages: [{basic_consume_ok,#{consumer_tag => <<"amq.ctag-PID6x4zM2pE95ZDZ-F813w">>}}]
+    links: [<0.334.0>,<0.318.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 10073
+  neighbours:
+2019-12-04 22:53:58 =SUPERVISOR REPORT====
+     Supervisor: {<0.334.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: :ok\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.462.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2019-12-04 22:54:01 =ERROR REPORT====
+** Generic server <0.483.0> terminating 
+** Last message in was #{'__struct__' => 'Elixir.Phoenix.Socket.Message',event => <<"broadcast_score">>,join_ref => <<"3">>,payload => #{<<"player_score">> => #{<<"cmd">> => <<>>,<<"fsx">> => <<"build.fsx">>,<<"params">> => <<>>}},ref => <<"4">>,topic => <<"score:platformer">>}
+** When Server state == #{'__struct__' => 'Elixir.Phoenix.Socket',assigns => #{},channel => 'Elixir.LarsonWeb.ScoreChannel',channel_pid => <0.483.0>,endpoint => 'Elixir.LarsonWeb.Endpoint',handler => 'Elixir.LarsonWeb.UserSocket',id => nil,join_ref => <<"3">>,joined => true,private => #{log_handle_in => debug,log_join => info},pubsub_server => 'Elixir.Larson.PubSub',ref => nil,serializer => 'Elixir.Phoenix.Socket.V2.JSONSerializer',topic => <<"score:platformer">>,transport => websocket,transport_pid => <0.458.0>}
+** Reason for termination ==
+** {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: :ok\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-12-04 22:54:01 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Channel.Server:init/1
+    pid: <0.483.0>
+    registered_name: []
+    exception error: {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: :ok\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.338.0>,<0.330.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.309.0>]
+    message_queue_len: 1
+    messages: [{basic_consume_ok,#{consumer_tag => <<"amq.ctag-rftrr-uMvOKBp5rsSTaCWA">>}}]
+    links: [<0.338.0>,<0.318.0>]
+    dictionary: [{gen_server_call_timeout,60000}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 9577
+  neighbours:
+2019-12-04 22:54:01 =SUPERVISOR REPORT====
+     Supervisor: {<0.338.0>,'Elixir.Supervisor.Default'}
+     Context:    child_terminated
+     Reason:     {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: :ok\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,25}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+     Offender:   [{pid,<0.483.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
