@@ -36,6 +36,14 @@ app.ports.broadcastScore.subscribe(function (scoreData) {
   channel.push("broadcast_score", { player_score: scoreData });
 });
 
+
+channel.on("broadcast_score", payload => {
+  console.log(`Receiving payload data from Phoenix using the receivingScoreFromPhoenix port. payload=${payload.player_score} `);
+  app.ports.receiveScoreFromPhoenix.send(
+            JSON.stringify({ player_score: payload.player_score})
+          );
+});
+
 // Import local files
 //
 // Local files can be imported directly using relative paths, for example:

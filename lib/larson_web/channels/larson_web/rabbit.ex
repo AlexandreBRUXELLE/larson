@@ -5,7 +5,6 @@ defmodule LarsonWeb.Rabbit do
       receive do
         {:basic_deliver, payload, %{correlation_id: ^correlation_id}} ->
           payload
-          IO.puts "Rabbit. got #{payload}"
       end
     end
 
@@ -38,7 +37,6 @@ defmodule LarsonWeb.Rabbit do
                           correlation_id: correlation_id)
 
       LarsonWeb.Rabbit.wait_for_messages(channel, correlation_id)
-      IO.puts "Rabbit. end  "
     end
 
 

@@ -62,11 +62,12 @@ if (platformer) {
   let channel = socket.channel("score:platformer", {})
 
   channel.join()
-    .receive("ok", resp => { console.log("Joined successfully", resp) })
-    .receive("error", resp => { console.log("Unable to join", resp) })
+    .receive("ok", resp => { console.log("Joined successfully platformer", resp) })
+    .receive("error", resp => { console.log("Unable to join platformer", resp) })
 
   app.ports.broadcastScore.subscribe(function (scoreData) {
-    console.log(`----> Broadcasting fsx=${scoreData.fsx} cmd=${scoreData.cmd} params=${scoreData.params} score data from Elm using the broadcast Score port.`);
+    console.log(`A----> Broadcasting fsx=${scoreData.fsx} cmd=${scoreData.cmd} params=${scoreData.params} score data from Elm using the broadcast Score port.`);
     channel.push("broadcast_score", { player_score: scoreData });
   });
+
 }

@@ -9,7 +9,7 @@ defmodule LarsonWeb.ScoreChannel do
   def handle_in("broadcast_score", payload, socket) do
 
 
-    #broadcast(socket, "broadcast_score", payload)
+
     #{list} =
     #%{"player_score"=>%{"cmd"=>cmd, "fsx"=>fsx, "params"=>params}}=payload
 
@@ -22,6 +22,12 @@ defmodule LarsonWeb.ScoreChannel do
     #IO.puts " [x] Requesting (#{Jason.encode!(%{"cmd" => "build", "fsx" => "build.fsx", "params" => " "})}) "
     response = LarsonWeb.Rabbit.call(mystr)
     IO.puts "handle [.] Got #{response}"
+
+    payload2 = %{
+      player_score: response
+    }
+
+    broadcast(socket, "broadcast_score",payload2)
 
     {:noreply, socket}
   end
