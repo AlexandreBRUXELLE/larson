@@ -3417,3 +3417,1460 @@
      Reason:     {#{'__exception__' => true,'__struct__' => 'Elixir.ArgumentError',message => <<"topic and event must be strings, message must be a map, got:\n\n  topic: \"score:platformer\"\n  event: \"broadcast_score\"\n  payload: \"-->2019-12-05 13:48:55.135339 \"\n\n">>},[{'Elixir.Phoenix.Channel.Server',raise_invalid_message,3,[{file,"lib/phoenix/channel/server.ex"},{line,200}]},{'Elixir.LarsonWeb.ScoreChannel',handle_in,3,[{file,"lib/larson_web/channels/score_channel.ex"},{line,30}]},{'Elixir.Phoenix.Channel.Server',handle_info,2,[{file,"lib/phoenix/channel/server.ex"},{line,279}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,637}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,711}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
      Offender:   [{pid,<0.478.0>},{id,'Elixir.Phoenix.Channel.Server'},{mfargs,{'Elixir.Phoenix.Channel.Server',start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
 
+2020-02-04 14:27:25 =ERROR REPORT====
+** Task <0.2005.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:25 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2005.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14118
+  neighbours:
+2020-02-04 14:27:25 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2005.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:27:30 =ERROR REPORT====
+** Task <0.2006.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:30 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2006.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:27:30 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2006.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:27:36 =ERROR REPORT====
+** Task <0.2007.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:36 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2007.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:27:36 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2007.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:27:41 =ERROR REPORT====
+** Task <0.2008.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2008.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:27:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2008.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:27:46 =ERROR REPORT====
+** Task <0.2009.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:46 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2009.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:27:46 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2009.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:27:51 =ERROR REPORT====
+** Task <0.2010.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:51 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2010.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:27:51 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2010.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:27:57 =ERROR REPORT====
+** Task <0.2012.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:27:57 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2012.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:27:57 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2012.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:28:02 =ERROR REPORT====
+** Task <0.2013.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:28:02 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2013.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:28:02 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2013.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:28:07 =ERROR REPORT====
+** Task <0.2014.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:28:07 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2014.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.1884.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1886.0>]
+    dictionary: [{'$callers',[<0.1886.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14235
+  neighbours:
+2020-02-04 14:28:07 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2014.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:01 =ERROR REPORT====
+** Task <0.416.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:01 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.416.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 14418
+  neighbours:
+2020-02-04 14:37:01 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.416.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:06 =ERROR REPORT====
+** Task <0.417.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:06 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.417.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:06 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.417.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:12 =ERROR REPORT====
+** Task <0.418.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:12 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.418.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:12 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.418.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:17 =ERROR REPORT====
+** Task <0.419.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:17 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.419.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.419.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:23 =ERROR REPORT====
+** Task <0.420.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:23 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.420.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.420.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:28 =ERROR REPORT====
+** Task <0.421.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:28 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.421.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:28 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.421.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:34 =ERROR REPORT====
+** Task <0.422.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:34 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.422.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:34 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.422.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:37:39 =ERROR REPORT====
+** Task <0.423.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:37:39 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.423.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14188
+  neighbours:
+2020-02-04 14:37:39 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.423.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:42:23 =ERROR REPORT====
+** Task <0.416.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:42:23 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.416.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 14424
+  neighbours:
+2020-02-04 14:42:23 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.416.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 14:42:29 =ERROR REPORT====
+** Task <0.417.0> terminating
+** Started from 'Elixir.LarsonWeb.Endpoint'
+** When function  == fun 'Elixir.Phoenix.Endpoint.Watcher':watch/3
+**      arguments == [<<"node">>,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]
+** Reason for termination == 
+** {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2020-02-04 14:42:29 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.417.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.295.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.297.0>]
+    dictionary: [{'$callers',[<0.297.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 6772
+    stack_size: 27
+    reductions: 14200
+  neighbours:
+2020-02-04 14:42:29 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.417.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/app/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/app/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:56:53 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2293.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14652
+  neighbours:
+2020-02-04 15:56:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2293.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:56:59 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2295.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:56:59 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2295.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:57:06 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2296.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:57:06 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2296.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:57:12 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2297.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:57:12 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2297.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:57:18 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2298.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:57:18 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2298.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:57:24 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.2303.0>
+    registered_name: []
+    exception exit: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/css,*/*;q=0.1">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/css/app.css">>,path_info => undefined,peer => {{172,16,21,77},54015},pid => <0.2300.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2303.0>,params => #{},path_info => [<<"css">>,<<"app.css">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"text/css,*/*;q=0.1">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/css/app.css">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66bvO2yiJqKMAAICi">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /css/app.css (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/css,*/*;q=0.1">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/css/app.css">>,path_info => undefined,peer => {{172,16,21,77},54015},pid => <0.2300.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2303.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"css">>,<<"app.css">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"text/css,*/*;q=0.1">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/css/app.css">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.2300.0>,<0.2191.0>,<0.2190.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2300.0>]
+    dictionary: [{'$logger_metadata$',#{request_id => <<"FfA66bvO2yiJqKMAAICi">>}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 35923
+  neighbours:
+2020-02-04 15:57:24 =ERROR REPORT====
+Ranch listener 'Elixir.LarsonWeb.Endpoint.HTTP', connection process <0.2300.0>, stream 2 had its request process <0.2303.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/css,*/*;q=0.1">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/css/app.css">>,path_info => undefined,peer => {{172,16,21,77},54015},pid => <0.2300.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2303.0>,params => #{},path_info => [<<"css">>,<<"app.css">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"text/css,*/*;q=0.1">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/css/app.css">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66bvO2yiJqKMAAICi">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /css/app.css (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/css,*/*;q=0.1">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/css/app.css">>,path_info => undefined,peer => {{172,16,21,77},54015},pid => <0.2300.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 2,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2303.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"css">>,<<"app.css">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"text/css,*/*;q=0.1">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/css/app.css">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace [{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2020-02-04 15:57:24 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.2308.0>
+    registered_name: []
+    exception exit: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/images/phoenix.png">>,path_info => undefined,peer => {{172,16,21,77},54017},pid => <0.2307.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2308.0>,params => #{},path_info => [<<"images">>,<<"phoenix.png">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/images/phoenix.png">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66b1XIiJDpg8AAICy">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /images/phoenix.png (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/images/phoenix.png">>,path_info => undefined,peer => {{172,16,21,77},54017},pid => <0.2307.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2308.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"images">>,<<"phoenix.png">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/images/phoenix.png">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.2307.0>,<0.2191.0>,<0.2190.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2307.0>]
+    dictionary: [{'$logger_metadata$',#{request_id => <<"FfA66b1XIiJDpg8AAICy">>}}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 35795
+  neighbours:
+2020-02-04 15:57:24 =ERROR REPORT====
+Ranch listener 'Elixir.LarsonWeb.Endpoint.HTTP', connection process <0.2307.0>, stream 1 had its request process <0.2308.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/images/phoenix.png">>,path_info => undefined,peer => {{172,16,21,77},54017},pid => <0.2307.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2308.0>,params => #{},path_info => [<<"images">>,<<"phoenix.png">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/images/phoenix.png">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66b1XIiJDpg8AAICy">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /images/phoenix.png (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/images/phoenix.png">>,path_info => undefined,peer => {{172,16,21,77},54017},pid => <0.2307.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2308.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"images">>,<<"phoenix.png">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/images/phoenix.png">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace [{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2020-02-04 15:57:24 =ERROR REPORT====
+Ranch listener 'Elixir.LarsonWeb.Endpoint.HTTP', connection process <0.2305.0>, stream 1 had its request process <0.2306.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/js/app.js">>,path_info => undefined,peer => {{172,16,21,77},54016},pid => <0.2305.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2306.0>,params => #{},path_info => [<<"js">>,<<"app.js">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/js/app.js">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66b1XBeSu3g8AAH2B">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /js/app.js (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/js/app.js">>,path_info => undefined,peer => {{172,16,21,77},54016},pid => <0.2305.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 1,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2306.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"js">>,<<"app.js">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/js/app.js">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace [{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2020-02-04 15:57:25 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2299.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:57:25 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2299.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:57:25 =CRASH REPORT====
+  crasher:
+    initial call: cowboy_stream_h:request_process/3
+    pid: <0.2319.0>
+    registered_name: []
+    exception exit: {{{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/favicon.ico">>,path_info => undefined,peer => {{172,16,21,77},54016},pid => <0.2305.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 3,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2319.0>,params => #{},path_info => [<<"favicon.ico">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/favicon.ico">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66d5JkyOJOLMAAIDC">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /favicon.ico (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/favicon.ico">>,path_info => undefined,peer => {{172,16,21,77},54016},pid => <0.2305.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 3,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2319.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"favicon.ico">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/favicon.ico">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}},[{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},[{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.2305.0>,<0.2191.0>,<0.2190.0>,'Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2305.0>]
+    dictionary: [{'$logger_metadata$',#{request_id => <<"FfA66d5JkyOJOLMAAIDC">>}}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 35890
+  neighbours:
+2020-02-04 15:57:25 =ERROR REPORT====
+Ranch listener 'Elixir.LarsonWeb.Endpoint.HTTP', connection process <0.2305.0>, stream 3 had its request process <0.2319.0> exit with reason {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/favicon.ico">>,path_info => undefined,peer => {{172,16,21,77},54016},pid => <0.2305.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 3,version => 'HTTP/1.1'}},assigns => #{},before_send => [#Fun<Elixir.Plug.Telemetry.0.66442134>,#Fun<Elixir.Phoenix.LiveReloader.0.104539078>],body_params => #{},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2319.0>,params => #{},path_info => [<<"favicon.ico">>],path_params => #{},port => 4000,private => #{'Elixir.LarsonWeb.Router' => {[],#{}},phoenix_endpoint => 'Elixir.LarsonWeb.Endpoint',phoenix_router => 'Elixir.LarsonWeb.Router',plug_session_fetch => #Fun<Elixir.Plug.Session.1.32542428>},query_params => #{},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/favicon.ico">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>},{<<"x-request-id">>,<<"FfA66d5JkyOJOLMAAIDC">>}],scheme => http,script_name => [],secret_key_base => <<"ZW56pvPUhnND/+vj/lIVouAUtOqU++lf8m/W5Fbp1je5YMXIadtneKfuWOI0IGU4">>,state => unset,status => nil},message => <<"no route found for GET /favicon.ico (LarsonWeb.Router)">>,plug_status => 404,router => 'Elixir.LarsonWeb.Router'},[{'Elixir.LarsonWeb.Router',call,2,[{file,"lib/phoenix/router.ex"},{line,324}]},{'Elixir.LarsonWeb.Endpoint',plug_builder_call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.LarsonWeb.Endpoint','call (overridable 3)',2,[{file,"lib/plug/debugger.ex"},{line,122}]},{'Elixir.LarsonWeb.Endpoint',call,2,[{file,"lib/larson_web/endpoint.ex"},{line,1}]},{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,40}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]},{'Elixir.LarsonWeb.Endpoint',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate">>,<<"accept-language">> => <<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"dnt">> => <<"1">>,<<"host">> => <<"192.168.0.35:4000">>,<<"referer">> => <<"http://192.168.0.35:4000/">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>},host => <<"192.168.0.35">>,host_info => undefined,method => <<"GET">>,path => <<"/favicon.ico">>,path_info => undefined,peer => {{172,16,21,77},54016},pid => <0.2305.0>,port => 4000,qs => <<>>,ref => 'Elixir.LarsonWeb.Endpoint.HTTP',scheme => <<"http">>,sock => {{192,168,0,35},4000},streamid => 3,version => 'HTTP/1.1'}},assigns => #{},before_send => [],body_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => body_params},cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},halted => false,host => <<"192.168.0.35">>,method => <<"GET">>,owner => <0.2319.0>,params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => params},path_info => [<<"favicon.ico">>],path_params => #{},port => 4000,private => #{},query_params => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => query_params},query_string => <<>>,remote_ip => {172,16,21,77},req_cookies => #{'__struct__' => 'Elixir.Plug.Conn.Unfetched',aspect => cookies},req_headers => [{<<"accept">>,<<"image/webp,image/apng,image/*,*/*;q=0.8">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">>},{<<"connection">>,<<"keep-alive">>},{<<"dnt">>,<<"1">>},{<<"host">>,<<"192.168.0.35:4000">>},{<<"referer">>,<<"http://192.168.0.35:4000/">>},{<<"user-agent">>,<<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36">>}],request_path => <<"/favicon.ico">>,resp_body => nil,resp_cookies => #{},resp_headers => [{<<"cache-control">>,<<"max-age=0, private, must-revalidate">>}],scheme => http,script_name => [],secret_key_base => nil,state => unset,status => nil},[]]}} and stacktrace [{'Elixir.Phoenix.Endpoint.Cowboy2Handler',init,2,[{file,"lib/phoenix/endpoint/cowboy2_handler.ex"},{line,49}]},{cowboy_handler,execute,2,[{file,"/app/larson/deps/cowboy/src/cowboy_handler.erl"},{line,41}]},{cowboy_stream_h,execute,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,296}]},{cowboy_stream_h,request_process,3,[{file,"/app/larson/deps/cowboy/src/cowboy_stream_h.erl"},{line,274}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]
+2020-02-04 15:57:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2315.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:57:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2315.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 15:57:37 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.2324.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.2173.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.2175.0>]
+    dictionary: [{'$callers',[<0.2175.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14563
+  neighbours:
+2020-02-04 15:57:37 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.2324.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:05:54 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.750.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.629.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.631.0>]
+    dictionary: [{'$callers',[<0.631.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14622
+  neighbours:
+2020-02-04 16:05:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.750.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:05:59 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.758.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.629.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.631.0>]
+    dictionary: [{'$callers',[<0.631.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14525
+  neighbours:
+2020-02-04 16:05:59 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.758.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:06:05 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.760.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.629.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.631.0>]
+    dictionary: [{'$callers',[<0.631.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 14525
+  neighbours:
+2020-02-04 16:06:05 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.760.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:07:09 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14750
+  neighbours:
+2020-02-04 16:07:09 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:08:48 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14731
+  neighbours:
+2020-02-04 16:08:48 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:17:32 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14719
+  neighbours:
+2020-02-04 16:17:32 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:17:38 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.447.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14535
+  neighbours:
+2020-02-04 16:17:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.447.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:17:44 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.448.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14535
+  neighbours:
+2020-02-04 16:17:44 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.448.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:18:36 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14727
+  neighbours:
+2020-02-04 16:18:36 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:18:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.447.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14544
+  neighbours:
+2020-02-04 16:18:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.447.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:18:47 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.448.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14544
+  neighbours:
+2020-02-04 16:18:47 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.448.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:18:53 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.449.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14544
+  neighbours:
+2020-02-04 16:18:53 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.449.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:18:59 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.450.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14544
+  neighbours:
+2020-02-04 16:18:59 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.450.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:19:05 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.451.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14544
+  neighbours:
+2020-02-04 16:19:05 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.451.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:24:52 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14739
+  neighbours:
+2020-02-04 16:24:52 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:25:37 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14721
+  neighbours:
+2020-02-04 16:25:37 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:34:30 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14726
+  neighbours:
+2020-02-04 16:34:30 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:34:39 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.447.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14541
+  neighbours:
+2020-02-04 16:34:39 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.447.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:39:29 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14733
+  neighbours:
+2020-02-04 16:39:29 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:39:35 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.447.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14550
+  neighbours:
+2020-02-04 16:39:35 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.447.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 16:39:42 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.448.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14550
+  neighbours:
+2020-02-04 16:39:42 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.448.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:05:58 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.445.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14731
+  neighbours:
+2020-02-04 18:05:58 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.445.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:06:04 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.447.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14547
+  neighbours:
+2020-02-04 18:06:04 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.447.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:06:10 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.448.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14547
+  neighbours:
+2020-02-04 18:06:10 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.448.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:06:16 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.449.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14547
+  neighbours:
+2020-02-04 18:06:16 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.449.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:06:22 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.450.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14547
+  neighbours:
+2020-02-04 18:06:22 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.450.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:06:29 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.451.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14547
+  neighbours:
+2020-02-04 18:06:29 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.451.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2020-02-04 18:06:35 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Phoenix.Endpoint.Watcher:watch/3
+    pid: <0.452.0>
+    registered_name: []
+    exception exit: {watcher_command_error,[{'Elixir.Phoenix.Endpoint.Watcher',watch,3,[{file,"lib/phoenix/endpoint/watcher.ex"},{line,29}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: ['Elixir.LarsonWeb.Endpoint','Elixir.Larson.Supervisor',<0.324.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.326.0>]
+    dictionary: [{'$callers',[<0.326.0>]}]
+    trap_exit: false
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 14547
+  neighbours:
+2020-02-04 18:06:35 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.LarsonWeb.Endpoint'}
+     Context:    child_terminated
+     Reason:     watcher_command_error
+     Offender:   [{pid,<0.452.0>},{id,{node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>,{cd,<<"/home/administrateur/phoenix/larson/assets">>}]}},{mfargs,{'Elixir.Phoenix.Endpoint.Watcher',start_link,[node,[<<"node_modules/webpack/bin/webpack.js">>,<<"--mode">>,<<"development">>,<<"--watch-stdin">>],[{cd,<<"/home/administrateur/phoenix/larson/assets">>}]]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
